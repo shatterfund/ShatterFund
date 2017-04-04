@@ -24,11 +24,11 @@
 /**
  * (optional) if the content inside the slide element has a defined size.
  */
-li {
+.slides li {
   position: relative;
   display: inline-block;
-
-  width: 880px;
+  //min-height: 20rem;
+  //width: 100%;
 }
 
 .prev, .next {
@@ -58,6 +58,7 @@ li {
 .dots {
   margin: 0;
   padding: 0;
+  left: 0;
   text-align: center;
   position: absolute;
   width: 100%;

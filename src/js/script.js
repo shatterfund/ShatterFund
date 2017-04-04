@@ -48,4 +48,14 @@
     });
   });
 
+  /*
+   * mobile menu
+   */
+  var mobileMenuToggle = document.querySelector('#mobileMenuToggle');
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function(evt) {
+      evt.target.parentElement.classList.toggle('is-open');
+    });
+  }
+
 })();

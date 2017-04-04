@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.618;
 }
@@ -54,16 +54,33 @@ h6 {
 }
 
 /*
+ *header
+ */
+.header {
+
+}
+
+/*
+ *footer
+ */
+.footer {
+
+}
+
+/*
  *navigation
  */
 .nav {
   display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 100;
+
+  &--header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+  }
 }
 
 .nav__container {
@@ -73,6 +90,12 @@ h6 {
 
 .nav__group {
   display: inline-flex;
+
+  &--justified {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
 }
 
 .nav__item {
@@ -145,6 +168,7 @@ $gutter : 1rem;
 .column--6-12 { width: percentage(6/12); }
 .column--7-12 { width: percentage(7/12); }
 .column--8-12 { width: percentage(8/12); }
+.column--12-12 { width: percentage(12/12); }
 
 .column--1-5 { width: percentage(1/5); }
 
@@ -169,6 +193,37 @@ $gutter : 1rem;
 
 .section__header {
   text-align: center;
+}
+
+/*
+ *advisor
+ */
+.advisor {
+  position: relative;
+}
+
+.advisor__avatar {
+  position: relative;
+  z-index: 20;
+}
+
+.advisor__name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 40;
+  padding: 1.2rem;
+}
+
+/*
+ *forms
+ */
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
 }
 
 /*

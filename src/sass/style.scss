@@ -29,3 +29,40 @@ h5,
 h6 {
   font-size: 1.25rem;
 }
+
+/*
+ *navigation
+ */
+.nav {
+  display: block;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__group {
+  display: inline-flex;
+}
+
+.nav__item {
+  display: inline-flex;
+}
+
+.nav__link {
+  padding: 0.6rem 1.2rem;
+}
+
+.nav__logo {
+  margin-right: auto;
+}
+
+/*
+ *grid
+ */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

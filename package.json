@@ -1,0 +1,29 @@
+{
+  "name": "ShatterFund",
+  "version": "1.0.0",
+  "description": "shatter fund site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilvadesigns/ShatterFund.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asilvadesigns/ShatterFund/issues"
+  },
+  "homepage": "https://github.com/asilvadesigns/ShatterFund#readme",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

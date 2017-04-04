@@ -198,10 +198,51 @@ $grid-gutter : 1rem;
 }
 
 /*
+ *section ourteam
+ */
+.section--ourteam {
+  color: white;
+  background-color: #163b4d;//blue
+
+  .section__header {
+    color: inherit;
+  }
+}
+
+/*
+ *section advisors
+ */
+.section--ouradvisors {
+  color: white;
+  background-color: #132f3e;//dark blue
+
+  .section__header {
+    color: inherit;
+  }
+}
+
+/*
  *advisor
  */
 .advisor {
   position: relative;
+  height: 16rem;
+  overflow: hidden;
+
+  &--cameron-yuill {
+    img {
+      position: absolute;
+      left: -1px;
+    }
+  }
+
+  &--alexandra-wilkis-wilson {
+
+  }
+
+  &--alison-pincus {
+
+  }
 }
 
 .advisor__avatar {
@@ -215,7 +256,7 @@ $grid-gutter : 1rem;
   left: 0;
   width: 100%;
   z-index: 40;
-  padding: 1.2rem;
+  padding: 0.8rem 1.2rem;
 }
 
 /*

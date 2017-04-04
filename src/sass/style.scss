@@ -59,10 +59,30 @@ h6 {
 }
 
 /*
+ *hero
+ */
+.hero {
+  background-color: #eee;
+  height: 100vh;
+}
+
+.hero__container {
+  height: 100vh;
+}
+
+.hero__header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/*
  *grid
  */
 .container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 1rem;
+  position: relative;
 }

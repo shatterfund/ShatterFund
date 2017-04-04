@@ -125,6 +125,50 @@ $grid-gutter : 1rem;
 }
 
 /*
+ *section whereweinvest
+ */
+.section--whereweinvest {
+  background-color: #f2f2f2;
+
+  .svg {
+    text-align: center;
+  }
+
+  .icon {
+    max-width: 20rem;
+  }
+}
+
+/*
+ *section portfolio
+ */
+.section--portfolio {
+
+  .column {
+    @media (min-width: 960px) {
+      vertical-align: middle;
+      float: none;
+      display: inline-block;
+      margin-right: -5px;
+    }
+  }
+
+  .svg {
+    text-align: center;
+  }
+
+  .icon {
+    height: 4rem;
+  }
+
+  .icon--urbansitter { height: 10rem; }
+  .icon--glamsquad { height: 9rem; }
+  .icon--barnraiser { height: 5.5rem; }
+  .icon--kraus { height: 3rem; }
+  .icon--tmn { height: 3rem; }
+}
+
+/*
  *advisor
  */
 .advisor {

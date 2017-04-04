@@ -72,7 +72,7 @@ $grid-gutter : 1rem;
   }
 }
 
-.section--thefund .section__background {
+.section__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,20 +87,33 @@ $grid-gutter : 1rem;
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
+  }
+
+  &:before {
+    z-index: 70;
+  }
+
+  &:after {
+    z-index: 50;
+  }
+}
+
+.section--thefund .section__background {
+  &:before,
+  &:after {
     width: 50%;
   }
 
   &:before {
+    background: linear-gradient(to right, rgba(0,0,0,0.0), white);
+  }
+
+  &:after {
     background: white;
     background-image: url('../img/shatterfund__background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 50;
-  }
-
-  &:after {
-    background: linear-gradient(to right, rgba(0,0,0,0.0), white);
-    z-index: 70;
   }
 }
 
@@ -166,6 +179,22 @@ $grid-gutter : 1rem;
   .icon--barnraiser { height: 5.5rem; }
   .icon--kraus { height: 3rem; }
   .icon--tmn { height: 3rem; }
+}
+
+/*
+ *section quotes
+ */
+.section--quotes {
+  background-image: url('../img/quotes__background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+
+  .section__background {
+    &:before {
+      background-color: rgba(0,0,0,0.6);
+    }
+  }
 }
 
 /*

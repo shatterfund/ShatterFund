@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shatter Fund</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"
 </head>
 <body>
   <!--
@@ -41,13 +41,16 @@
   <div class="hero">
     <div class="hero__container container">
       <header class="hero__header">
-        <h1>Shatter Fund</h1>
-        <p>Scaling Up Female Entrepreneurship</p>
+        <h1 class="primary">Shatter Fund</h1>
+        <hr>
+        <p class="secondary">Scaling Up Female Entrepreneurship</p>
       </header>
-      <footer class="hero__footer">
-        <h3>We invest in Female Entrepreneurship.<strong>The Untapped Unicorns in an Emerging Market</strong></h3>
-      </footer>
     </div>
+    <footer class="hero__footer">
+      <div class="container">
+        <h3>We invest in Female Entrepreneurship.<strong>The Untapped Unicorns in an Emerging Market</strong></h3>
+      </div>
+    </footer>
   </div>
   <!--
   -#TheFund
@@ -274,15 +277,16 @@
            </div>
            <footer>
              <h4><strong>Request An Invite</strong></h4>
-             <form class="form" id="requestAnInviteForm">
+             <form action="https://formspree.io/albertos@hzdg.com" method="POST" class="form" id="requestAnInviteForm">
                <div>
                  <label for="requestAnInviteForm__name">First and Last Name</label>
-                 <input id="requestAnInviteForm__name" type="text">
+                 <input id="requestAnInviteForm__name" type="text" name="name">
                </div>
                <div>
                  <label for="requestAnInviteForm__email">E-mail address</label>
-                 <input id="requestAnInviteForm__email" type="email">
+                 <input id="requestAnInviteForm__email" type="email" name="email">
                </div>
+               <input type="hidden" name="_subject" value="Shatter Summit Invite Request" />
                <button type="submit">Submit</button>
              </form>
            </footer>
@@ -330,6 +334,7 @@
                    <textarea id="contactUsForm__mesage" name="message" cols="30" rows="5"></textarea>
                  </div>
                </div>
+               <input type="hidden" name="_subject" value="Inquiry" />
               <button type="submit">Submit</button>
              </form>
            </div>

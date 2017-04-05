@@ -49,13 +49,17 @@ hr {
 }
 
 .mt1 {
-  margin-top: $line-height*1rem;
+  margin-top: $line-height*1rem !important;
 }
 
 .mb1 {
-  margin-bottom: $line-height*1rem;
+  margin-bottom: $line-height*1rem !important;
 }
 
 .mb0 {
   margin-bottom: 0 !important;
+}
+
+.text-red {
+  color: #eb1c24 !important;//red
 }

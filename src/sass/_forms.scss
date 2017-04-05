@@ -8,3 +8,33 @@ textarea {
   width: 100%;
 }
 
+input,
+textarea {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 0.4rem;
+}
+
+label {
+  font-size: 85%;
+  margin-bottom: ($line-height / 4) * 1rem;
+}
+
+input,
+textarea {
+  margin-bottom: $line-height * 1rem;
+}
+
+button {
+  color: white;
+  border: 1px solid #eb1c24;
+  border-radius: 4px;
+  background-color: #eb1c24;//red
+  padding: 0.125rem 0.4rem 0.2rem;
+  font-size: 85%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: mix(white, #eb1c24, 20%);
+  }
+}

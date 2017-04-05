@@ -3,11 +3,11 @@
   /*
    *lory slider
    */
-  document.addEventListener('DOMContentLoaded', function () {
-    var simple_dots       = document.querySelector('.js_simple_dots');
-    var dot_count         = simple_dots.querySelectorAll('.js_slide').length;
-    var dot_container     = simple_dots.querySelector('.js_dots');
-    var dot_list_item     = document.createElement('li');
+  document.addEventListener('DOMContentLoaded', function() {
+    var simple_dots = document.querySelector('.js_simple_dots');
+    var dot_count = simple_dots.querySelectorAll('.js_slide').length;
+    var dot_container = simple_dots.querySelector('.js_dots');
+    var dot_list_item = document.createElement('li');
 
     function handleDotEvent(e) {
       if (e.type === 'before.lory.init') {
@@ -47,15 +47,65 @@
       enableMouseEvents: true
     });
   });
+})();
 
-  /*
-   * mobile menu
-   */
+/*
+ * mobile menu
+ */
+var MobileMenu = (function() {
   var mobileMenuToggle = document.querySelector('#mobileMenuToggle');
-  if (mobileMenuToggle) {
-    mobileMenuToggle.addEventListener('click', function(evt) {
-      evt.target.parentElement.classList.toggle('is-open');
-    });
+
+  function Init() {
+    if (!mobileMenuToggle) {
+      return;
+    }
+
+    _AddEventListeners();
+  }
+
+  function _AddEventListeners() {
+    mobileMenuToggle.addEventListener('click', _ToggleState);
+  }
+
+  function _ToggleState(evt) {
+    evt.target.parentElement.classList.toggle('is-open');
+  }
+
+  return {
+    init: Init
   }
 
 })();
+MobileMenu.init();
+
+/*
+ *google map init
+ */
+
+
+/*
+ * google map dynamic height
+ */
+var GoogleMapHeight = (function() {
+  var googleMapHeightRef = document.querySelector('.js-google-map__height');
+  var googleMapIframe = document.querySelector('.js-google-map__iframe');
+
+  function Init() {
+    _SetHeight();
+    _AddEventListeners();
+  }
+
+  function _AddEventListeners() {
+    window.onresize = _SetHeight();
+  }
+
+  function _SetHeight() {
+    googleMapIframe.style.height = parseInt(googleMapHeightRef.clientHeight) + "px";
+  }
+
+  return {
+    init: Init
+  }
+
+})();
+GoogleMapHeight.init();

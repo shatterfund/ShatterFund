@@ -14,23 +14,11 @@ $grid-gutter : 1rem;
 /*
  *components
  */
+@import 'footer';
 @import 'forms';
 @import 'grid';
 @import 'hero';
 @import 'nav';
-
-/*
- *footer
- */
-.footer {
-  color: white;
-  background-color: #eb1c24;//red
-
-  .nav__link {
-    color: inherit;
-  }
-}
-
 
 /*
  *section
@@ -74,16 +62,6 @@ $grid-gutter : 1rem;
   }
 }
 
-/*
- *section shatterfund
- */
-.section--thefund {
-
-  .section__header {
-    color: #163b4d;//blue
-  }
-}
-
 .section__background {
   position: absolute;
   top: 0;
@@ -111,21 +89,31 @@ $grid-gutter : 1rem;
   }
 }
 
-.section--thefund .section__background {
-  &:before,
-  &:after {
-    width: 50%;
+/*
+ *section shatterfund
+ */
+.section--thefund {
+
+  .section__header {
+    color: #163b4d;//blue
   }
 
-  &:before {
-    background: linear-gradient(to right, rgba(0,0,0,0.0), white);
-  }
+  .section__background {
+    &:before,
+    &:after {
+      width: 50%;
+    }
 
-  &:after {
-    background: white;
-    background-image: url('../img/shatterfund__background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    &:before {
+      background: linear-gradient(to right, rgba(0,0,0,0.0), white);
+    }
+
+    &:after {
+      background: white;
+      background-image: url('../img/shatterfund__background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }
 

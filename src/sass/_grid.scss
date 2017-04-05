@@ -25,23 +25,24 @@
 
 .column {
   padding: 0 $grid-gutter;
-  @media (min-width: 960px) {
-    float: left;
-  }
 }
 
-.column--3-12 { width: percentage(3/12); }
-.column--4-12 { width: percentage(4/12); }
-.column--5-12 { width: percentage(5/12); }
-.column--6-12 { width: percentage(6/12); }
-.column--7-12 { width: percentage(7/12); }
-.column--8-12 { width: percentage(8/12); }
-.column--12-12 { width: percentage(12/12); }
+@media (min-width: 960px) {
+  .column { float: left; }
 
-.column--1-5 { width: percentage(1/5); }
+  .column--3-12 { width: percentage(3/12); }
+  .column--4-12 { width: percentage(4/12); }
+  .column--5-12 { width: percentage(5/12); }
+  .column--6-12 { width: percentage(6/12); }
+  .column--7-12 { width: percentage(7/12); }
+  .column--8-12 { width: percentage(8/12); }
+  .column--12-12 { width: percentage(12/12); }
 
-.column--offset--6-12 {
-  margin-left: percentage(6/12);
+  .column--1-5 { width: percentage(1/5); }
+
+  .column--offset--6-12 {
+    margin-left: percentage(6/12);
+  }
 }
 
 /*

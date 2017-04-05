@@ -37,7 +37,7 @@ em {
 }
 
 p {
-  margin-top: $line-height*1rem;
+  margin-bottom: $line-height*1rem;
 }
 
 hr {
@@ -48,3 +48,14 @@ hr {
   margin: $line-height*1rem 0;
 }
 
+.mt1 {
+  margin-top: $line-height*1rem;
+}
+
+.mb1 {
+  margin-bottom: $line-height*1rem;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}

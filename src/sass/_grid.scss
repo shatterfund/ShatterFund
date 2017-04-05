@@ -3,7 +3,7 @@
  */
 
 .container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 $grid-gutter;
   position: relative;
@@ -16,6 +16,10 @@
     content: "";
     clear: both;
     display: block;
+  }
+
+  &--equal-height {
+    display: flex;
   }
 }
 
@@ -40,3 +44,21 @@
   margin-left: percentage(6/12);
 }
 
+/*
+ *full width flush grid
+ */
+.container--flush {
+  &,
+  &.container,
+  > .row > .column {
+    padding: 0;
+  }
+
+  &.container {
+    max-width: 100%;
+  }
+
+  > .row {
+    margin: 0;
+  }
+}

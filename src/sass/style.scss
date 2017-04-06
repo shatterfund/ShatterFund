@@ -93,15 +93,30 @@ $grid-gutter : 1rem;
  *section shatterfund
  */
 .section--thefund {
+  @media (max-width: 959px) {
+    padding-top: 30rem;
+  }
 
   .section__header {
     color: #163b4d;//blue
   }
 
+  .section__wrapper {
+    @media (max-width: 959px) {
+      max-width: 30rem;
+      margin: 0 auto;
+    }
+  }
+
   .section__background {
     &:before,
     &:after {
-      width: 50%;
+      @media (min-width: 960px) {
+        width: 50%;
+      }
+      @media (max-width: 959px) {
+        height: 26rem;
+      }
     }
 
     &:before {
@@ -113,6 +128,7 @@ $grid-gutter : 1rem;
       background-image: url('../img/shatterfund__background.jpg');
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 }
@@ -123,6 +139,16 @@ $grid-gutter : 1rem;
 .section--ourvalue {
   color: white;
   background-color: #163b4d;//blue
+
+  @media (max-width: 959px) {
+    .container {
+      max-width: 20rem;
+    }
+
+    .column {
+      margin-bottom: ($line-height * 2) * 1rem;
+    }
+  }
 
   .section__header {
     color: inherit;
@@ -143,6 +169,16 @@ $grid-gutter : 1rem;
 .section--whereweinvest {
   background-color: #f2f2f2;
 
+  @media (max-width: 959px) {
+    .container {
+      max-width: 30rem;
+    }
+
+    .column--7-12 {
+      margin-bottom: ($line-height * 4) * 1rem;
+    }
+  }
+
   .svg {
     text-align: center;
   }
@@ -157,8 +193,8 @@ $grid-gutter : 1rem;
  */
 .section--portfolio {
 
-  .column {
-    @media (min-width: 960px) {
+  @media (min-width: 960px) {
+    .column {
       vertical-align: middle;
       float: none;
       display: inline-block;
@@ -179,6 +215,22 @@ $grid-gutter : 1rem;
   .icon--barnraiser { height: 5.5rem; }
   .icon--kraus { height: 3rem; }
   .icon--tmn { height: 3rem; }
+
+  @media (max-width: 959px) {
+    .icon--urbansitter,
+    .icon--glamsquad {
+      margin-top: ($line-height * 2) * -1rem;
+    }
+    .icon--barnraiser {
+      //margin-top: ($line-height * 2) * -1rem;
+    }
+    .icon--kraus {
+      margin-top: ($line-height * 2) * 1rem;
+    }
+    .icon--tmn {
+      margin-top: ($line-height * 2) * 1rem;
+    }
+  }
 }
 
 /*
@@ -204,6 +256,16 @@ $grid-gutter : 1rem;
   color: white;
   background-color: #163b4d;//blue
 
+  @media (max-width: 959px) {
+    .container {
+      max-width: 30rem;
+    }
+
+    img {
+      margin-bottom: $line-height * 1rem;
+    }
+  }
+
   .section__header {
     color: inherit;
   }
@@ -216,6 +278,20 @@ $grid-gutter : 1rem;
   color: white;
   background-color: #132f3e;//dark blue
 
+  @media (max-width: 959px) {
+    .column--3-12 {
+      width: percentage(6/12);
+      float: left;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .column--3-12 {
+      width: 100%;
+      float: none;
+    }
+  }
+
   .section__header {
     color: inherit;
   }
@@ -226,6 +302,16 @@ $grid-gutter : 1rem;
  */
 .section--shattersummit {
   padding: 0;
+
+  @media (max-width: 959px) {
+    padding-top: 30rem;
+
+    .section__wrapper {
+      max-width: 30rem;
+      margin: 0 auto;
+    }
+  }
+
 
   .section__header,
   .section__body,
@@ -256,7 +342,12 @@ $grid-gutter : 1rem;
   .section__background {
     &:before,
     &:after {
-      width: percentage(7/12);
+      @media (min-width: 960px) {
+        width: percentage(7/12);
+      }
+      @media (max-width: 959px) {
+        height: 26rem;
+      }
     }
 
     &:before {
@@ -268,6 +359,7 @@ $grid-gutter : 1rem;
       background-image: url('../img/summit__background.jpg');
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center center;
     }
   }
 }
@@ -315,19 +407,28 @@ $grid-gutter : 1rem;
   height: 16rem;
   overflow: hidden;
 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 959px) {
+    margin-bottom: $line-height * 1rem;
+  }
+
   &--cameron-yuill {
-    img {
-      position: absolute;
-      left: -1px;
-    }
+     background-image: url('../img/advisor__cameron-yuill.jpg');
+     background-position: -1px center;
   }
 
   &--alexandra-wilkis-wilson {
-
+     background-image: url('../img/advisor__alexandra-wilkis-wilson.jpg');
   }
 
   &--alison-pincus {
+     background-image: url('../img/advisor__alison-pincus.jpg');
+  }
 
+  &--reema-khan {
+     background-image: url('../img/advisor__reema-khan.jpg');
   }
 }
 
@@ -364,9 +465,6 @@ $grid-gutter : 1rem;
 }
 
 .google-map {
-  position: absolute;
-  top: 0;
-  left: 0;
 
   &,
   iframe {

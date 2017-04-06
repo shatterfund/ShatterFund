@@ -3,6 +3,7 @@
  */
 .hero {
   background-image: url('../img/hero__background.jpg');
+  background-position: center center;
   background-color: black;
   height: 100%;
   position: relative;
@@ -37,6 +38,15 @@
     font-weight: 700;
     color: #eb1c24;//red
     text-transform: uppercase;
+    transition: font-size 0.2s ease-in-out;
+
+    @media (max-width: 700px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 3rem;
+    }
   }
 
   .secondary {

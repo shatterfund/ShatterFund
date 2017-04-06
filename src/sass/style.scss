@@ -253,6 +253,42 @@ body, .smooth-container { scroll-behavior: smooth }
       background-color: rgba(0,0,0,0.6);
     }
   }
+
+  blockquote {
+    color: white;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      height: 2rem;
+    }
+
+    &:before {
+      background-image: url('../img/leftquote.svg');
+    }
+
+    &:after {
+      background-image: url('../img/rightquote.svg');
+    }
+
+    cite {
+      display: block;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #eb1c24;//red
+    }
+  }
+  .Wallop-item {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .Wallop-buttonPrevious,
+  .Wallop-buttonNext {
+    display: none;
+  }
 }
 
 /*
@@ -523,4 +559,4 @@ body, .smooth-container { scroll-behavior: smooth }
 /*
  *slider
  */
-@import "lory";
+@import "wallop";

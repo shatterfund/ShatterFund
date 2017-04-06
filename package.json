@@ -25,5 +25,8 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.0"
   }
 }

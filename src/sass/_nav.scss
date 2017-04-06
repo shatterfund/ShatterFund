@@ -58,6 +58,14 @@
 }
 
 .nav__mobile-menu__menu {
+  .nav__link {
+    transition: color 0.25s ease-in-out;
+
+    &.is-inview {
+      color: #eb1c24;//red
+    }
+  }
+
   @media (max-width: 959px) {
     transition: opacity 0.15s ease-in-out;
     opacity: 0;
@@ -119,4 +127,3 @@
     height: ($line-height * 1.6) * 1rem;
   }
 }
-

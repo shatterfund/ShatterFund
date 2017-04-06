@@ -16,11 +16,13 @@
     <nav class="nav nav--header">
       <div class="nav__container container">
         <div class="nav__group nav__logo">
-          <a class="nav__item nav__link" href="#">LOGO</a>
+          <a class="nav__item nav__link" href="#">
+            <img class="logo" src="img/logo.svg" alt="Shatter Fund Logo">
+          </a>
         </div>
         <div class="nav__mobile-menu">
-          <button type="button "class="nav__mobile-menu__toggle" id="mobileMenuToggle">
-            toggle
+          <button type="button "class="nav__link nav__mobile-menu__toggle" id="mobileMenuToggle">
+            menu
           </button>
           <div class="nav__mobile-menu__menu">
             <a class="nav__item nav__link" href="#thefund">The Fund</a>
@@ -302,7 +304,8 @@
   <!--
   -#ShatterSummit
   -->
-  <section class="section section--shattersummit" id="shattersummit">
+  <div class="anchor" id="shattersummit"></div>
+  <section class="section section--shattersummit">
     <div class="section__wrapper">
       <div class="container container--flush">
         <div class="row">
@@ -345,7 +348,7 @@
                   <input id="requestAnInviteForm__email" type="email" name="email">
                 </div>
                 <input type="hidden" name="_subject" value="Shatter Summit Invite Request" />
-                <button type="submit">Submit</button>
+                <button class="btn" type="submit">Submit</button>
               </form>
             </footer>
           </div>
@@ -357,7 +360,8 @@
   <!--
   -#Contact
   -->
-  <section class="section section--contact js-google-map__height" id="contact">
+  <div class="anchor" id="contact"></div>
+  <section class="section section--contact js-google-map__height">
      <div class="container container--flush">
        <div class="row">
          <div class="column column--7-12">
@@ -414,7 +418,7 @@
                  </div>
                </div>
                <input type="hidden" name="_subject" value="Inquiry" />
-               <button type="submit">Submit</button>
+               <button class="btn" type="submit">Submit</button>
              </form>
            </div>
          </div>

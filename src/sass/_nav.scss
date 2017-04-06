@@ -58,29 +58,34 @@
 }
 
 .nav__mobile-menu__menu {
-  .nav__link {
-    transition: color 0.25s ease-in-out;
+  @media (min-width: 960px) {
+    .nav__link {
+      transition: color 0.25s ease-in-out;
 
-    &.is-inview {
-      color: #eb1c24;//red
+      &.is-inview {
+        color: #eb1c24;//red
+      }
     }
   }
 
   @media (max-width: 959px) {
-    transition: opacity 0.15s ease-in-out;
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    pointer-events: none;
-    min-width: 200px;
-    background-color: #163b4d;//blue
+    & {
+      transition: opacity 0.15s ease-in-out;
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      pointer-events: none;
+      min-width: 200px;
+      background-color: #163b4d;//blue
+    }
 
     .nav__link {
       display: flex;
       color: white;
       transition-property: background-color 0.125s ease-in-out;
 
+      &.is-inview,
       &:hover {
         background-color: mix(black, #163b4d, 20%);//dark blue
       }

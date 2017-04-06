@@ -79,8 +79,26 @@ var MobileMenu = (function() {
 MobileMenu.init();
 
 /*
- *google map init
+ *utils
  */
+(function() {
+  var throttle = function(type, name, obj) {
+    obj = obj || window;
+    var running = false;
+    var func = function() {
+      if (running) { return; }
+      running = true;
+      requestAnimationFrame(function() {
+        obj.dispatchEvent(new CustomEvent(name));
+        running = false;
+      });
+    };
+    obj.addEventListener(type, func);
+  };
+
+  /* init - you can init any event */
+  throttle("resize", "optimizedResize");
+})();
 
 
 /*
@@ -92,15 +110,16 @@ var GoogleMapHeight = (function() {
 
   function Init() {
     _SetHeight();
-    _AddEventListeners();
+    window.addEventListener("optimizedResize", _SetHeight);
   }
 
-  function _AddEventListeners() {
-    window.onresize = _SetHeight();
-  }
 
   function _SetHeight() {
-    googleMapIframe.style.height = parseInt(googleMapHeightRef.clientHeight) + "px";
+    if (window.innerWidth > 960) {
+      googleMapIframe.style.height = parseInt(googleMapHeightRef.clientHeight) + "px";
+    } else {
+      googleMapIframe.style.height = "500px";
+    }
   }
 
   return {

@@ -246,7 +246,6 @@ body, .smooth-container { scroll-behavior: smooth }
   background-image: url('../img/quotes__background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 20rem;
 
   .section__background {
     &:before {
@@ -260,16 +259,23 @@ body, .smooth-container { scroll-behavior: smooth }
 
     &:after,
     &:before {
+      position: relative;
       content: "";
       display: block;
       height: 2rem;
+      background-repeat: no-repeat;
     }
 
     &:before {
-      background-image: url('../img/leftquote.svg');
+      top: 1rem;
+      left: -5rem;
+      background-image: url(../img/leftquote.svg);
+      height: 3rem;
     }
 
     &:after {
+      right: -100%;
+      bottom: 1rem;
       background-image: url('../img/rightquote.svg');
     }
 
@@ -278,11 +284,14 @@ body, .smooth-container { scroll-behavior: smooth }
       font-weight: 700;
       text-transform: uppercase;
       color: #eb1c24;//red
+      margin-top: $line-height * 1rem;
     }
   }
+
   .Wallop-item {
     max-width: 40rem;
     margin: 0 auto;
+    padding: 0 5rem;
   }
 
   .Wallop-buttonPrevious,

@@ -21,6 +21,11 @@ $grid-gutter : 1rem;
 @import 'nav';
 
 /*
+ *zen scroll
+ */
+body, .smooth-container { scroll-behavior: smooth }
+
+/*
  *section
  */
 .section {

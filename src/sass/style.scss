@@ -462,6 +462,24 @@ body, .smooth-container { scroll-behavior: smooth }
 .section--contact {
   padding: 0;
 
+  .section__body .column--6-12 {
+    @media (min-width: 560px) {
+      width: 50%;
+      float: left;
+    }
+
+    @media (max-width: 559px) {
+      .media {
+        margin-bottom: $line-height * 1rem;
+      }
+
+      .media-object {
+        min-width: 5rem;
+        text-align: center;
+      }
+    }
+  }
+
   .section__header,
   .section__body,
   .section__footer {

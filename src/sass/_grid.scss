@@ -30,6 +30,7 @@
 @media (min-width: 960px) {
   .column { float: left; }
 
+  .column--2-12 { width: percentage(2/12); }
   .column--3-12 { width: percentage(3/12); }
   .column--4-12 { width: percentage(4/12); }
   .column--5-12 { width: percentage(5/12); }

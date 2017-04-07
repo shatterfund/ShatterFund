@@ -160,8 +160,30 @@ body, .smooth-container { scroll-behavior: smooth }
     color: inherit;
   }
 
+  .section__subheader {
+    & {
+      text-align: center;
+    }
+    .primary {
+      color: white;
+    }
+  }
+
+  .section__body {
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-bottom: ($line-height * 4) * 1rem;
+  }
+
   .column {
     text-align: center;
+  }
+
+  @media (min-width: 960px) {
+    .panel {
+      max-width: 15rem;
+      margin: 0 auto;
+    }
   }
 
   .icon {
@@ -251,6 +273,12 @@ body, .smooth-container { scroll-behavior: smooth }
   background-size: cover;
   background-repeat: no-repeat;
 
+  .section__wrapper {
+    @media (min-width: 960px) {
+      height: 366px;
+    }
+  }
+
   .section__background {
     &:before {
       background-color: rgba(0,0,0,0.6);
@@ -331,7 +359,7 @@ body, .smooth-container { scroll-behavior: smooth }
  */
 .section--ouradvisors {
   color: white;
-  background-color: #132f3e;//dark blue
+  //background-color: #132f3e;//dark blue
 
   @media (max-width: 959px) {
     .column--3-12 {
@@ -528,6 +556,11 @@ body, .smooth-container { scroll-behavior: smooth }
     margin-bottom: $line-height * 1rem;
   }
 
+  &--shelly-kapoor-collins {
+     background-image: url('../img/general-partner__shelly-kapoor-collins.jpg');
+     background-position: -1px center;
+  }
+
   &--cameron-yuill {
      background-image: url('../img/advisor__cameron-yuill.jpg');
      background-position: -1px center;
@@ -557,7 +590,19 @@ body, .smooth-container { scroll-behavior: smooth }
   left: 0;
   width: 100%;
   z-index: 40;
-  padding: 0.8rem 1.2rem;
+
+  a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgba(0,0,0,0.6);
+    }
+  }
 }
 
 /*

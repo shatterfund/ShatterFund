@@ -25,6 +25,8 @@
  */
 var MobileMenu = (function() {
   var mobileMenuToggle = document.querySelector('#mobileMenuToggle');
+  var mobileMenuLinks  = document.querySelectorAll('.js-nav__mobile-menu__menu .nav__link');
+  var mobileMenuParent = document.querySelector('.nav__mobile-menu');
 
   function Init() {
     if (!mobileMenuToggle) {
@@ -36,10 +38,17 @@ var MobileMenu = (function() {
 
   function _AddEventListeners() {
     mobileMenuToggle.addEventListener('click', _ToggleState);
+    for (var i = 0; i < mobileMenuLinks.length; i++ ) {
+      mobileMenuLinks[i].addEventListener('click', _ToggleMobileState);
+    }
   }
 
-  function _ToggleState(evt) {
-    evt.target.parentElement.classList.toggle('is-open');
+  function _ToggleState() {
+    mobileMenuParent.classList.toggle('is-open');
+  }
+
+  function _ToggleMobileState() {
+    _ToggleState();
   }
 
   return {

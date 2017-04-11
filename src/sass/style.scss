@@ -277,12 +277,6 @@ body, .smooth-container { scroll-behavior: smooth }
   background-size: cover;
   background-repeat: no-repeat;
 
-  .section__wrapper {
-    @media (min-width: 960px) {
-      height: 366px;
-    }
-  }
-
   .section__background {
     &:before {
       background-color: rgba(0,0,0,0.8);
@@ -324,15 +318,10 @@ body, .smooth-container { scroll-behavior: smooth }
     }
   }
 
-  .Wallop-item {
+  .swiper-slide blockquote {
     max-width: 40rem;
     margin: 0 auto;
     padding: 0 5rem;
-  }
-
-  .Wallop-buttonPrevious,
-  .Wallop-buttonNext {
-    display: none;
   }
 }
 
@@ -650,4 +639,4 @@ body, .smooth-container { scroll-behavior: smooth }
 /*
  *slider
  */
-@import "wallop";
+@import "swiper";

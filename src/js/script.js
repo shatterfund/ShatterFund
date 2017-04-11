@@ -21,6 +21,27 @@
 })();
 
 /*
+ *scrollspy
+ */
+var spy = new ScrollSpy('#js-scrollspy', {
+  nav: '.js-scrollspy-nav .nav__link',
+  className: 'is-inview'
+});
+
+/*
+ *swiper slider
+ */
+var swiper = new Swiper('.swiper-container', {
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  autoplay: 2500,
+  loop: true,
+  grabCursor: true
+});
+
+
+
+/*
  * mobile menu
  */
 var MobileMenu = (function() {

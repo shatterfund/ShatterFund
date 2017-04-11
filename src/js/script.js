@@ -34,9 +34,11 @@ var spy = new ScrollSpy('#js-scrollspy', {
 var swiper = new Swiper('.swiper-container', {
   pagination: '.swiper-pagination',
   paginationClickable: true,
-  autoplay: 2500,
+  autoplay: 3500,
   loop: true,
-  grabCursor: true
+  grabCursor: true,
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev',
 });
 
 

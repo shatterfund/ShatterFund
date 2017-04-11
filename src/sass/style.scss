@@ -14,6 +14,7 @@ $grid-gutter : 1rem;
 /*
  *components
  */
+@import 'buttons';
 @import 'footer';
 @import 'forms';
 @import 'grid';
@@ -640,3 +641,16 @@ body, .smooth-container { scroll-behavior: smooth }
  *slider
  */
 @import "swiper";
+
+/*
+ *slider buttons
+ */
+.swiper-button-next,
+.swiper-button-prev {
+  transition: opacity 0.25s ease-in-out;
+  opacity: 0.5;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+}

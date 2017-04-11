@@ -8,26 +8,26 @@ var uglify       = require("gulp-uglify");
 var paths = {
   html: {
     src: "./src/**/*.html",
-    dist: "./dist",
+    dist: ".",
   },
   images: {
     src: "./src/img/**/*.*",
-    dist: "./dist/img"
+    dist: "./img"
   },
   font: {
     src: "./src/font/**/*.*",
-    dist: "./dist/font"
+    dist: "./font"
   },
   scripts: {
     src: "./src/js/**/*.js",
-    dist: "./dist/js"
+    dist: "./js"
   },
   serve: {
-    src: "./dist"
+    src: "."
   },
   styles: {
     src: "./src/sass/**/*.scss",
-    dist: "./dist/css",
+    dist: "./css",
   }
 };
 

@@ -1,17 +1,20 @@
 /*
  *navigation
  */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 500;
+}
+
 .nav {
   display: block;
 
   &--header {
-    padding-top: 1rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 500;
+    padding-top: 0.4rem;
   }
 }
 
@@ -130,5 +133,23 @@
 
   .logo {
     height: ($line-height * 1.6) * 1rem;
+  }
+}
+
+.nav--shopify {
+  background-color: #f4f4f4;
+
+  .nav__container {
+    justify-content: flex-end;
+  }
+
+  .nav__link {
+    //color: white;
+    //background-color: red;
+    line-height: 1;
+    font-size: 0.75em;
+    letter-spacing: 0.15em;
+    padding: 0.6rem 0.4rem;
+    text-transform: capitalize;
   }
 }

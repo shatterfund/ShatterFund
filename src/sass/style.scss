@@ -35,9 +35,9 @@ body, .smooth-container { scroll-behavior: smooth }
   position: relative;
   overflow: hidden;
 
-  @media (min-width: 960px) {
-    min-height: 100%;
-  }
+  //@media (min-width: 960px) {
+    //min-height: 100%;
+  //}
 }
 
 .section__wrapper {
@@ -250,6 +250,8 @@ body, .smooth-container { scroll-behavior: smooth }
   .icon--kraus { height: 3rem; }
   .icon--tmn { height: 3rem; }
   .icon--onsecondthought { height: 3rem; }
+  .icon--yuhmbox { height: 3rem; }
+  .icon--learnlux { height: 2rem; }
 
   @media (max-width: 959px) {
     .icon--urbansitter,
@@ -266,6 +268,12 @@ body, .smooth-container { scroll-behavior: smooth }
       margin-top: ($line-height * 2) * 1rem;
     }
     .icon--onsecondthought {
+      margin-top: ($line-height * 2) * 1rem;
+    }
+    .icon--yuhmbox {
+      margin-top: ($line-height * 2) * 1rem;
+    }
+    .icon--learnlux {
       margin-top: ($line-height * 2) * 1rem;
     }
   }
@@ -480,6 +488,37 @@ body, .smooth-container { scroll-behavior: smooth }
       background-repeat: no-repeat;
       background-position: center center;
     }
+  }
+}
+/*
+ *press logos
+ */
+.list--logos {
+  width: 100%;
+  list-style: none;
+
+  > li {
+    margin-bottom: ($line-height / 2) * 1rem;
+
+    > a {
+      cursor: pointer;
+      display: block;
+      transition: opacity 0.125s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .icon--forbes {
+    height: 1.5rem;
+  }
+  .icon--sanfranciscochronicle {
+    height: 2rem;
+  }
+  .icon--hauteliving {
+    height: 2rem;
   }
 }
 

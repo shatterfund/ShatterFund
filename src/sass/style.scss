@@ -491,33 +491,41 @@ body, .smooth-container { scroll-behavior: smooth }
   }
 }
 /*
+ *logo links
+ */
+.logo__link {
+  cursor: pointer;
+  display: block;
+  transition: opacity 0.125s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+/*
  *press logos
  */
 .list--logos {
-  width: 100%;
   list-style: none;
 
-  > li {
-    margin-bottom: ($line-height / 2) * 1rem;
-
-    > a {
-      cursor: pointer;
-      display: block;
-      transition: opacity 0.125s ease-in-out;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
+  > div {
+    margin-bottom: ($line-height / 2) * 2rem;
   }
 
   .icon--forbes {
     height: 1.5rem;
   }
+
   .icon--sanfranciscochronicle {
     height: 2rem;
   }
+
   .icon--hauteliving {
+    height: 2rem;
+  }
+
+  .icon--verve {
     height: 2rem;
   }
 }
@@ -689,8 +697,12 @@ body, .smooth-container { scroll-behavior: smooth }
 .swiper-button-prev {
   transition: opacity 0.25s ease-in-out;
   opacity: 0.5;
-  
+
   &:hover {
     opacity: 0.9;
   }
+}
+
+.pt2 {
+  padding-top: 2rem;
 }

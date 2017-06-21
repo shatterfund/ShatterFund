@@ -137,7 +137,7 @@ body, .smooth-container { scroll-behavior: smooth }
 
     &:after {
       background: white;
-      background-image: url('../img/shatterfund__background.jpg');
+      background-image: url('../img/ShatterFund__statistic.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -500,6 +500,23 @@ body, .smooth-container { scroll-behavior: smooth }
 
   &:hover {
     opacity: 0.5;
+  }
+}
+
+/*
+ *press section
+ */
+.section--press {
+  min-height: 70%;
+  padding-bottom: 0;
+
+  .section__wrapper {
+    padding-bottom: 0;
+  }
+
+  .press__video {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

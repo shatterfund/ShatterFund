@@ -252,6 +252,13 @@ body, .smooth-container { scroll-behavior: smooth }
   .icon--onsecondthought { height: 3rem; }
   .icon--yuhmbox { height: 3rem; }
   .icon--learnlux { height: 2rem; }
+  .icon--helloalice { height: 4rem; }
+
+  @media (min-width: 960px) {
+    .row:last-child {
+      margin-top: 3rem;
+    }
+  }
 
   @media (max-width: 959px) {
     .icon--urbansitter,
@@ -274,6 +281,9 @@ body, .smooth-container { scroll-behavior: smooth }
       margin-top: ($line-height * 2) * 1rem;
     }
     .icon--learnlux {
+      margin-top: ($line-height * 2) * 1rem;
+    }
+    .icon--helloalice {
       margin-top: ($line-height * 2) * 1rem;
     }
   }

@@ -10,3 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 12-10-2019
 ### Removed
 - Fatema Hamdani/Kraus Quote
+
+### Added
+- this changelog
+
+### Changed
+- gulp and gulp-sass dependancy upgrade

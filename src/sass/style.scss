@@ -245,14 +245,9 @@ body, .smooth-container { scroll-behavior: smooth }
   }
 
   .icon--urbansitter { height: 10rem; }
-  .icon--glamsquad { height: 9rem; }
-  .icon--barnraiser { height: 5.5rem; }
-  .icon--kraus { height: 3rem; }
-  .icon--tmn { height: 3rem; }
-  .icon--onsecondthought { height: 3rem; }
-  .icon--yuhmbox { height: 3rem; }
-  .icon--learnlux { height: 2rem; }
-  .icon--helloalice { height: 4rem; }
+  .icon--glamsquad { height: 8rem; }
+  .icon--gokid { height: 3rem; }
+  .icon--wishknish { height: 2.5rem; }
 
   @media (min-width: 960px) {
     .row:last-child {
@@ -260,33 +255,7 @@ body, .smooth-container { scroll-behavior: smooth }
     }
   }
 
-  @media (max-width: 959px) {
-    .icon--urbansitter,
-    .icon--glamsquad {
-      margin-top: ($line-height * 2) * -1rem;
-    }
-    .icon--barnraiser {
-      //margin-top: ($line-height * 2) * -1rem;
-    }
-    .icon--kraus {
-      margin-top: ($line-height * 2) * 1rem;
-    }
-    .icon--tmn {
-      margin-top: ($line-height * 2) * 1rem;
-    }
-    .icon--onsecondthought {
-      margin-top: ($line-height * 2) * 1rem;
-    }
-    .icon--yuhmbox {
-      margin-top: ($line-height * 2) * 1rem;
-    }
-    .icon--learnlux {
-      margin-top: ($line-height * 2) * 1rem;
-    }
-    .icon--helloalice {
-      margin-top: ($line-height * 2) * 1rem;
-    }
-  }
+  @media (max-width: 959px) {}
 }
 
 /*

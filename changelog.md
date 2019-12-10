@@ -11,9 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Fatema Hamdani/Kraus Quote
 - Shatter Summit page
+- Various portfolio logos
 
 ### Added
 - this changelog
+- KeyConceierge
+- GoKid
+- HelloAlice
+- WishKNish
 
 ### Changed
 - gulp and gulp-sass dependency upgrade

@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shatter Summit page
 - Various portfolio logos
 - Address and Map
+- Deleted CNAME file for https via github
 
 ### Added
 - this changelog
@@ -21,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Quotes (Jenny, Amy N, Erin)
 - Press (Diablo, CBS, SF Biz, NHG)
 - Video (Tory Burch Foundation)
+- Titles
 
 ### Changed
 - gulp and gulp-sass dependency upgrade

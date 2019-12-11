@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Advisors (Jennifer, Karen K, Catherine, Emily, Karen P, Rangita)
 - Quotes (Jenny, Amy N, Erin)
 - Press (Diablo, CBS, SF Biz, NHG)
+- Video (Tory Burch Foundation)
 
 ### Changed
 - gulp and gulp-sass dependency upgrade

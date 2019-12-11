@@ -2,7 +2,7 @@ _ - 1. Change the font to Sans Serif throughout the site. From a visual design p
 
 _ - 2. On the very first section, remove "*Innovation by Design: The Case for Investing in Women. *Anita Borg Institute. April. 2014. Web. 07 Aug 2014" 
 
-_ - 3. Team Section. 
+X - 3. Team Section. 
 Change my title to Founding Partner
 Change layout: 
 Row 1: Shelly Kapoor Collins, Founding Partner (so just me on this row)

@@ -11,9 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Shopify nav
 - Contact form
 - Remove asterisk and data point.
+- Font weight(300)
 
 ### Added
 - New address
+- Font weight(700)
 
 ### Changed
 - Our Team member ordering

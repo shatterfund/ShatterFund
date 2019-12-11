@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - this changelog
 - Portfolio (KeyConceierge, GoKid, HelloAlice, WishKNish)
 - Advisors (Jennifer, Karen K, Catherine, Emily, Karen P, Rangita)
+- Quotes (Jenny, Amy N, Erin)
 
 ### Changed
 - gulp and gulp-sass dependency upgrade

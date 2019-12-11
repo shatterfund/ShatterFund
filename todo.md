@@ -1,6 +1,6 @@
 _ - 1. Change the font to Sans Serif throughout the site. From a visual design perspective, this font is more comforting to users. Look at the Medium site as an example.
 
-_ - 2. On the very first section, remove "*Innovation by Design: The Case for Investing in Women. *Anita Borg Institute. April. 2014. Web. 07 Aug 2014" 
+X - 2. On the very first section, remove "*Innovation by Design: The Case for Investing in Women. *Anita Borg Institute. April. 2014. Web. 07 Aug 2014" 
 
 X - 3. Team Section. 
 Change my title to Founding Partner

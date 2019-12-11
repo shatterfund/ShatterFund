@@ -11,7 +11,7 @@ Row 3: Emily Davis  Alexandra Wilkis Wilson  Karen Page, Rangita de silva de alw
 
 X - 4. On the Contact Us section, I tested the Contact Us form. It doesn't work. Either let's get it to work or take it off. 
 
-_ - 5. Let's update the Address to:
+X - 5. Let's update the Address to:
 4115 Blackhawk Plaza Circle
 Suite 100
 Danville, CA 94506

@@ -487,25 +487,50 @@
   <div class="anchor" id="contact"></div>
   <section class="section section--contact js-google-map__height">
     <div class="container container--flush">
-      <header class="section__header">
-        <h3 class="primary"><strong>Contact Us</strong></h3>
-        <hr>
-      </header>
-      <div class="section__body">
-        <div class="row">
-          <div class="column column--6-12">
-            <div class="media">
-              <div class="media-object">
-                <div class="svg">
-                  <img class="icon" src="img/icon__twitter.svg" alt="twitter logo">
+      <div class="row">
+        <div class="column column--7-12">
+          <header class="section__header">
+            <h3 class="primary"><strong>Contact Us</strong></h3>
+            <hr>
+          </header>
+          <div class="section__body">
+            <div class="row">
+              <div class="column column--6-12">
+                <div class="media">
+                  <div class="media-object">
+                    <div class="svg">
+                      <img class="icon" src="img/icon__twitter.svg" alt="twitter logo">
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <a href="mailto:information@shatterfund.com">information@shatterfund.com</a><br>
+                    @ShatterFund
+                  </div>
                 </div>
               </div>
-              <div class="media-body">
-                <a href="mailto:information@shatterfund.com">information@shatterfund.com</a><br>
-                @ShatterFund
-              </div>
+              <div class="column column--6-12">
+                <div class="media">
+                  <div class="media-object">
+                    <div class="svg">
+                      <img class="icon" src="img/icon__marker.svg" alt="map marker">
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <address>
+                      4115 Blackhawk Plaza Circle<br>
+                      Suite 100<br>
+                      Danville, CA 94506
+                    </address>
+                  </div>
+                </div>
+              </div>          
             </div>
           </div>
+        </div>
+        <div class="google-map__wrapper column column--5-12">	
+          <div class="google-map">	
+            <div class="js-google-map__iframe" id="map"></div>	
+          </div>	
         </div>
       </div>
     </div>
@@ -536,7 +561,7 @@
   <script defer src="js/script.js" type="text/javascript"></script>
   <script>
     function GoogleMapInit() {
-      var center = { lat: 37.800501, lng: -122.401127 };
+      var center = { lat: 37.801016, lng: -121.920921 };
       var map = new google.maps.Map(document.getElementById('map'), {
         center: center,
         zoom: 16,

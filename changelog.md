@@ -25,3 +25,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - gulp and gulp-sass dependency upgrade
 - CNAME, shatterfund.com TO theshatterfund.com
+- use Rangita's full name

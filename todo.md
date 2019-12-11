@@ -9,7 +9,7 @@ Row 1: Shelly Kapoor Collins, Founding Partner (so just me on this row)
 Row 2: Jennifer Johnson  Karen King  Alison Pincus Catherine Zinn
 Row 3: Emily Davis  Alexandra Wilkis Wilson  Karen Page, Rangita de silva de alwis
 
-_ - 4. On the Contact Us section, I tested the Contact Us form. It doesn't work. Either let's get it to work or take it off. 
+X - 4. On the Contact Us section, I tested the Contact Us form. It doesn't work. Either let's get it to work or take it off. 
 
 _ - 5. Let's update the Address to:
 4115 Blackhawk Plaza Circle

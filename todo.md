@@ -1,6 +1,21 @@
-X - 1. Update with new Advisors
-X - 2. Update portfolio
-X - 3. Remove Shatter Summit section altogether.
-X - 4. Update quotes
-X - 5. Update media
-X - 6. Add Video
+_ - 1. Change the font to Sans Serif throughout the site. From a visual design perspective, this font is more comforting to users. Look at the Medium site as an example.
+
+_ - 2. On the very first section, remove "*Innovation by Design: The Case for Investing in Women. *Anita Borg Institute. April. 2014. Web. 07 Aug 2014" 
+
+_ - 3. Team Section. 
+Change my title to Founding Partner
+Change layout: 
+Row 1: Shelly Kapoor Collins, Founding Partner (so just me on this row)
+Row 2: Jennifer Johnson  Karen King  Alison Pincus Catherine Zinn
+Row 3: Emily Davis  Alexandra Wilkis Wilson  Karen Page, Rangita de silva de alwis
+
+_ - 4. On the Contact Us section, I tested the Contact Us form. It doesn't work. Either let's get it to work or take it off. 
+
+_ - 5. Let's update the Address to:
+4115 Blackhawk Plaza Circle
+Suite 100
+Danville, CA 94506
+
+X - 6. Remove learning store icon
+
+_ - 7. Point the shattersyndicates.com domain to shatterfund.com or turn syndicates off altogether (it’s hosted in godaddy)

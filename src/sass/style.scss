@@ -483,13 +483,29 @@ body, .smooth-container { scroll-behavior: smooth }
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 959px) {
-    margin-bottom: $line-height * 1rem;
-  }
+  // @media (max-width: 959px) {
+    margin-bottom: $line-height * 1.5rem;
+  // }
 
   &--shelly-kapoor-collins {
      background-image: url('../img/collins_GSE.jpg');
      background-position: right center;
+  }
+
+  &--jennifer-johnson {
+    background-image: url('../img/advisor__jennifer-johnson.jpg');
+  }
+
+  &--karen-king {
+    background-image: url('../img/advisor__karen-king.jpg');
+  }
+
+  &--catherine-zinn {
+    background-image: url('../img/advisor__catherine-zinn.jpg');
+  }
+
+  &--emily-davis {
+    background-image: url('../img/advisor__emily-davis.jpg');
   }
 
   &--cameron-yuill {
@@ -497,16 +513,20 @@ body, .smooth-container { scroll-behavior: smooth }
      background-position: -1px center;
   }
 
-  &--alexandra-wilkis-wilson {
-     background-image: url('../img/advisor__alexandra-wilkis-wilson.jpg');
-  }
-
   &--alison-pincus {
      background-image: url('../img/advisor__alison-pincus.jpg');
   }
 
-  &--reema-khan {
-     background-image: url('../img/advisor__reema-khan.jpg');
+  &--alexandra-wilkis-wilson {
+     background-image: url('../img/advisor__alexandra-wilkis-wilson.jpg');
+  }
+
+  &--karen-page {
+     background-image: url('../img/advisor__karen-page.jpg');
+  }
+
+  &--rangita {
+     background-image: url('../img/advisor__rangita.jpg');
   }
 }
 
@@ -529,6 +549,7 @@ body, .smooth-container { scroll-behavior: smooth }
     width: 100%;
     padding: 0.8rem 1.2rem;
     transition: background-color 0.2s ease-in-out;
+    background-color: rgba(0,0,0,0.3);
 
     &:hover {
       background-color: rgba(0,0,0,0.6);

@@ -1,6 +1,7 @@
-_ - 1. Update with new Advisors
+X - 1. Update with new Advisors
 X - 2. Update portfolio
-X - 3. Remove Shatter Summit section altogether. 
+X - 3. Remove Shatter Summit section altogether.
+_ - 4. Update quotes
 
 4.
   Can we replace Shatter Summit section with Media links?

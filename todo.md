@@ -18,6 +18,8 @@ Danville, CA 94506
 
 X - 6. Remove learning store icon
 
-_ - 7. Point the shattersyndicates.com domain to shatterfund.com or turn syndicates off altogether (it’s hosted in godaddy)
+X - 7. Point the shattersyndicates.com domain to shatterfund.com or turn syndicates off altogether (it’s hosted in godaddy)
 
-X - 8. Change some quote
+X - 8. Change hero image quote  
+
+X - 9. Center Shelly's image

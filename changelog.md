@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Our Team member ordering
+- Center Shelly's image
 
 ## [1.0.0] - 12-10-2019
 ### Removed

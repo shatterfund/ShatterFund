@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Shelly image for "our team" section.
+- Hero section response
 
 ## [1.0.2] - 12-31-2019
 ### Removed

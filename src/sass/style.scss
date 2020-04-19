@@ -244,16 +244,21 @@ body, .smooth-container { scroll-behavior: smooth }
     height: 4rem;
   }
 
+  .icon--mb-1x { margin-bottom: 1rem; }
+
   .icon--urbansitter { height: 10rem; }
   .icon--glamsquad { height: 8rem; }
   .icon--gokid { height: 3rem; }
   .icon--hintwater { height: 2.5rem; }
+  .icon--lobus { height: 6rem }
+  .icon--fitzframes { height: 3rem }
+  .icon--waggit { height: 3rem }
 
-  @media (min-width: 960px) {
-    .row:last-child {
-      margin-top: 3rem;
-    }
-  }
+  // @media (min-width: 960px) {
+  //   .row:last-child {
+  //     margin-top: 3rem;
+  //   }
+  // }
 
   @media (max-width: 959px) {}
 }

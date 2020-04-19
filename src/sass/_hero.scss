@@ -2,7 +2,8 @@
  *hero
  */
 .hero {
-  background-image: url('../img/Laptophands_HighRes.jpg');
+  background-image: url('../img/hero__covid-19--large.jpg');
+  // background-image: url('../img/Laptophands_HighRes.jpg');
   background-position: center top;
   background-size: cover;
   background-color: black;
@@ -19,6 +20,26 @@
     left: 0;
     height: 100%;
     width: 100%;
+  }
+
+  &--covid-19 {
+    &:before {
+      background: rgba(0,0,0,0.5);      
+      background: linear-gradient(to right, rgba(0,0,0,0.9) , rgba(0,0,0,0.2));
+    }
+
+    .hero__header {
+      .primary {
+        color: #439fff;
+      }
+      .secondary, .btn {
+        font-weight: 700;
+      }
+    }
+
+    .hero__footer {
+      background-color: #063a70;
+    }
   }
 }
 

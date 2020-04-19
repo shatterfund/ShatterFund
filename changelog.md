@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.3] - 04/19/2020
 ### Added
 - Lobus, Fitz, Blockparty, Shine, EventHollow, and Waggit Logos.
+- Covid-19 hero section.
 
 ### Changed
 - Shelly image for "our team" section.

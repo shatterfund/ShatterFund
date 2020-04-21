@@ -34,7 +34,7 @@ var spy = new ScrollSpy('#js-scrollspy', {
 var swiper = new Swiper('.swiper-container', {
   pagination: '.swiper-pagination',
   paginationClickable: true,
-  autoplay: 3500,
+  autoplay: false,
   loop: true,
   grabCursor: true,
   nextButton: '.swiper-button-next',
@@ -92,7 +92,6 @@ var GoogleMapHeight = (function() {
     _SetHeight();
     window.addEventListener("optimizedResize", _SetHeight);
   }
-
 
   function _SetHeight() {
     if (window.innerWidth > 960) {

@@ -35,8 +35,17 @@
       .primary {
         color: #439fff;
       }
-      .secondary, .btn {
+      .secondary {
         font-weight: 700;
+      }
+      .btn {
+        color: #063a70;
+        border-color: #ffffff;
+        background-color: #ffffff;
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 900;
       }
     }
 

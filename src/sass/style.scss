@@ -288,6 +288,7 @@ body, .smooth-container { scroll-behavior: smooth }
       display: block;
       height: 2rem;
       background-repeat: no-repeat;
+      opacity: 0.2;
     }
 
     &:before {

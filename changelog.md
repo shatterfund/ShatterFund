@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.5] - 04/21/2020
 ### Added
 - Quotes around Maya Angelo quote
+- Favicon
+
+### Removed
+- Dist folder
 
 ### Changed
 - Enlarge quotes

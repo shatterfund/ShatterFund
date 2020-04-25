@@ -14,6 +14,10 @@ var paths = {
     src: "./src/img/**/*.*",
     dist: "./img"
   },
+  documents: {
+    src: "./src/docs/**/*.*",
+    dist: "./docs"
+  },
   font: {
     src: "./src/font/**/*.*",
     dist: "./font"
@@ -33,7 +37,7 @@ var paths = {
 
 gulp.task("default",
   gulp.series(
-    html, font, images, scripts, styles,
+    html, font, images, documents, scripts, styles,
     gulp.parallel(serve, watch)
   )
 );
@@ -53,6 +57,12 @@ function font() {
 function images() {
   return gulp.src(paths.images.src)
     .pipe(gulp.dest(paths.images.dist))
+    .pipe(sync.stream());
+}
+
+function documents() {
+  return gulp.src(paths.documents.src)
+    .pipe(gulp.dest(paths.documents.dist))
     .pipe(sync.stream());
 }
 
@@ -85,6 +95,7 @@ function watch() {
   gulp.watch(paths.html.src).on("change", html);
   gulp.watch(paths.font.src).on("change", font);
   gulp.watch(paths.images.src).on("change", images);
+  gulp.watch(paths.documents.src).on("change", documents);
   gulp.watch(paths.scripts.src).on("change", scripts);
   gulp.watch(paths.styles.src).on("change", styles);
 }

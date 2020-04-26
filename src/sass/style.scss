@@ -650,3 +650,15 @@ body, .smooth-container { scroll-behavior: smooth }
 .pt2 {
   padding-top: 2rem;
 }
+
+.divider {
+  &--1x {
+    height: 2rem;
+  }
+
+  &--sm-below {
+    @media (min-width: 960px) {
+      display: none;
+    }
+  }
+}

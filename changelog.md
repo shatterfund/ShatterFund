@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Hero section, covid-19 survey results copy and styles
 - Podcast in press section
+- Media section
 
 ### Changed
 - Hero section, covid-19 survey section, separation

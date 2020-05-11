@@ -10,18 +10,6 @@ var paths = {
     src: "./src/**/*.html",
     dist: ".",
   },
-  images: {
-    src: "./src/img/**/*.*",
-    dist: "./img"
-  },
-  documents: {
-    src: "./src/docs/**/*.*",
-    dist: "./docs"
-  },
-  font: {
-    src: "./src/font/**/*.*",
-    dist: "./font"
-  },
   scripts: {
     src: "./src/js/**/*.js",
     dist: "./js"
@@ -37,7 +25,7 @@ var paths = {
 
 gulp.task("default",
   gulp.series(
-    html, font, images, documents, scripts, styles,
+    html, scripts, styles,
     gulp.parallel(serve, watch)
   )
 );
@@ -45,24 +33,6 @@ gulp.task("default",
 function html() {
   return gulp.src(paths.html.src)
     .pipe(gulp.dest(paths.html.dist))
-    .pipe(sync.stream());
-}
-
-function font() {
-  return gulp.src(paths.font.src)
-    .pipe(gulp.dest(paths.font.dist))
-    .pipe(sync.stream());
-}
-
-function images() {
-  return gulp.src(paths.images.src)
-    .pipe(gulp.dest(paths.images.dist))
-    .pipe(sync.stream());
-}
-
-function documents() {
-  return gulp.src(paths.documents.src)
-    .pipe(gulp.dest(paths.documents.dist))
     .pipe(sync.stream());
 }
 
@@ -93,9 +63,6 @@ function styles() {
 
 function watch() {
   gulp.watch(paths.html.src).on("change", html);
-  gulp.watch(paths.font.src).on("change", font);
-  gulp.watch(paths.images.src).on("change", images);
-  gulp.watch(paths.documents.src).on("change", documents);
   gulp.watch(paths.scripts.src).on("change", scripts);
   gulp.watch(paths.styles.src).on("change", styles);
 }

@@ -1,14 +1,14 @@
 /*
  *utils
  */
-(function() {
-  var throttle = function(type, name, obj) {
+(function () {
+  var throttle = function (type, name, obj) {
     obj = obj || window;
     var running = false;
-    var func = function() {
+    var func = function () {
       if (running) { return; }
       running = true;
-      requestAnimationFrame(function() {
+      requestAnimationFrame(function () {
         obj.dispatchEvent(new CustomEvent(name));
         running = false;
       });
@@ -31,24 +31,37 @@ var spy = new ScrollSpy('#js-scrollspy', {
 /*
  *swiper slider
  */
-var swiper = new Swiper('.swiper-container', {
-  pagination: '.swiper-pagination',
-  paginationClickable: true,
-  autoplay: 4500,
+const swiperOptions = {
   loop: true,
-  grabCursor: true,
-  nextButton: '.swiper-button-next',
-  prevButton: '.swiper-button-prev',
-});
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 4500,
+  },
+}
 
+const swiperHero = new Swiper('.swiper-hero', Object.assign({
+  grabCursor: false,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  speed: 1250,
+}, swiperOptions));
+const swiperQuotes = new Swiper('.swiper-quotes', Object.assign({ grabCursor: true }, swiperOptions));
 
 
 /*
  * mobile menu
  */
-var MobileMenu = (function() {
+var MobileMenu = (function () {
   var mobileMenuToggle = document.querySelector('#mobileMenuToggle');
-  var mobileMenuLinks  = document.querySelectorAll('.js-nav__mobile-menu__menu .nav__link');
+  var mobileMenuLinks = document.querySelectorAll('.js-nav__mobile-menu__menu .nav__link');
   var mobileMenuParent = document.querySelector('.nav__mobile-menu');
 
   function Init() {
@@ -61,7 +74,7 @@ var MobileMenu = (function() {
 
   function _AddEventListeners() {
     mobileMenuToggle.addEventListener('click', _ToggleState);
-    for (var i = 0; i < mobileMenuLinks.length; i++ ) {
+    for (var i = 0; i < mobileMenuLinks.length; i++) {
       mobileMenuLinks[i].addEventListener('click', _ToggleMobileState);
     }
   }
@@ -84,7 +97,7 @@ MobileMenu.init();
 /*
  * google map dynamic height
  */
-var GoogleMapHeight = (function() {
+var GoogleMapHeight = (function () {
   var googleMapHeightRef = document.querySelector('.js-google-map__height');
   var googleMapIframe = document.querySelector('.js-google-map__iframe');
 

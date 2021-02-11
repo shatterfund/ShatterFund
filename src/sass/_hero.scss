@@ -11,9 +11,22 @@
 }
 
 .hero {
+  background-image: url('../../img/Laptophands_HighRes.jpg');
   background-position: center top;
   background-size: cover;
   background-color: black;
+
+  &:before {
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
   @media (min-width: 959px) {
     height: 100%;
@@ -37,30 +50,6 @@
     z-index: 0;
   }
 
-  &--covid-19 {
-    .hero__header {
-      .primary {
-        color: #439fff;
-      }
-      .secondary {
-        font-weight: 700;
-      }
-      .btn {
-        color: #063a70;
-        border-color: #ffffff;
-        background-color: #ffffff;
-        letter-spacing: 0.125em;
-        text-transform: uppercase;
-        font-size: 0.75rem;
-        font-weight: 900;
-        padding-bottom: 0.5rem;
-      }
-    }
-
-    .hero__footer {
-      background-color: #063a70;
-    }
-  }
 }
 
 .hero__container {

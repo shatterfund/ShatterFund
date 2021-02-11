@@ -8,7 +8,7 @@
   <title>Shatter Fund</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -28,7 +28,7 @@
           </a>
         </div>
         <div id="js-scrollspy" class="nav__mobile-menu js-nav__mobile-menu">
-          <button type="button " class="nav__link nav__mobile-menu__toggle" id="mobileMenuToggle">
+          <button type="button" class="nav__link nav__mobile-menu__toggle" id="mobileMenuToggle">
             menu
           </button>
           <div class="nav__mobile-menu__menu js-nav__mobile-menu__menu js-scrollspy-nav">
@@ -49,78 +49,29 @@
   <!--
   -hero
   -->
-  <div class="hero hero--covid-19">
-    <!--
-    -slider START
-    -->
-    <div class="swiper-hero swiper-no-swiping">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="hero__bg"></div>
-          <div class="hero__container container">
-            <div class="hero__header">
-              <h1 class="primary">Shatter Fund</h1>
-              <hr>
-              <div class="row">
-                <div class="column column--6-12">
-                  <div style="max-width: 32rem;">
-                    <p class="secondary">Recognizing women on the frontlines<br>fighting the pandemic spread</p>
-                    <p>Women are fighting the COVID-19 pandemic on the frontlines. Shatter Fund had a dozen women-led
-                      companies working to honor their sacrifice with care packages they richly deserve. Nominations are
-                      closed. Awardees will be announced May 6.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hero__img" style="background-image: url('../img/hero__covid-19--large.jpg')"></div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="hero__bg"></div>
-          <div class="hero__container container">
-            <div class="hero__header">
-              <div class="row">
-                <div class="column column--6-12">
-                  <div style="max-width: 32rem;">
-                    <p class="secondary">Women received just a fraction of the venture capital available to grow and
-                      scale —
-                      pre-COVID-19</p>
-                    <p>Shatter Fund surveyed its 40+ portfolio companies and network partners in recent
-                      weeks to find out how things have shifted, and found more than half of these companies have seen a
-                      decrease in available capital.</p>
-                    <p>There’s never been a more important time to step up and redouble investments in women
-                      entrepreneurs,
-                      and Shatter Fund’s commitment is unwavering. </p>
-                    <p><a class="btn btn--hero" href="/docs/Shatter Fund Survey 2020.pdf" target="_blank">survey
-                        results here</a></p>
-                    <p><a class="btn btn--hero" href="/docs/Resources Guide.pdf" target="_blank">Resources List</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hero__img" style="background-image: url('../img/hero-slideshow-image-1.jpg')" />
-        </div>
+  <div class="hero">
+    <div class="hero__container container">
+      <header class="hero__header">
+        <h1 class="primary">Shatter Fund</h1>
+        <hr>
+        <p class="secondary">Scaling Up Female Entrepreneurship</p>
+        <a class="btn btn--hero" href="#testimonials">Read Our Testimonials</a>
+        <a class="btn btn--primary" target="_blank" href="https://shattersummit2021.splashthat.com/">SHATTER SUMMIT March 10, 2021</a>
+      </header>
+    </div>
+  <!--  <footer class="hero__footer">-->
+  <!--    <div class="container">-->
+  <!--      <h3>The biggest emerging market in the world is not China; <strong>it's women.</strong></h3>-->
+  <!--      <small style="opacity: 0.75; margin-top: 0.5rem; display: block;">- Sylvia Ann Hewlett, Chair and CEO of the Center for Talent Innovation</small>-->
+  <!--    </div>-->
+  <!--  </footer>-->
+    <footer class="hero__footer">
+      <div class="container">
+        <h3 style="font-style: italic;">&ldquo;Each time a woman stands up for herself, without knowing it possibly,
+          without claiming it, she stands up for all women.&rdquo;</h3>
+        <small style="opacity: 0.6; margin-top: 0.5rem; display: block;">— Maya Angelo</small>
       </div>
-
-    </div>
-    <!-- Arrows -->
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-  </div>
-  <!--
-    - slider END
-    -->
-
-  <footer class="hero__footer">
-    <div class="container">
-      <h3 style="font-style: italic;">&ldquo;Each time a woman stands up for herself, without knowing it possibly,
-        without claiming it, she stands up for all women.&rdquo;</h3>
-      <small style="opacity: 0.6; margin-top: 0.5rem; display: block;">— Maya Angelo</small>
-    </div>
-  </footer>
+    </footer>
   </div>
   <!--
   -quotes
@@ -666,7 +617,7 @@
   -script
   -->
   <script src="js/scrollspy/scrollspy.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="js/script.js" type="text/javascript"></script>
   <script>
     function GoogleMapInit() {

@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added link to Juneteenth Post "Resources List"
 
 ---
-
+Crate and Barrel wood coffee table with storage
 ## [1.0.10] - 05/20/2020
 ### Changes
 - Advisor section, remove Alexandra Wilkis Wilson

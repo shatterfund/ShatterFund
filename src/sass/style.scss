@@ -1,4 +1,4 @@
-$grid-gutter : 1rem;
+$grid-gutter: 1rem;
 
 /*
  *helpers
@@ -25,7 +25,9 @@ $grid-gutter : 1rem;
 /*
  *zen scroll
  */
-body, .smooth-container { scroll-behavior: smooth }
+body, .smooth-container {
+  scroll-behavior: smooth
+}
 
 /*
  *section
@@ -36,8 +38,17 @@ body, .smooth-container { scroll-behavior: smooth }
   overflow: hidden;
 
   //@media (min-width: 960px) {
-    //min-height: 100%;
+  //min-height: 100%;
   //}
+}
+
+.section--full-height {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 960px) {
+    height: 768px;
+  }
 }
 
 .section__wrapper {
@@ -45,14 +56,7 @@ body, .smooth-container { scroll-behavior: smooth }
   z-index: 100;
 }
 
-.section__container {
-
-}
-
 .section__header {
-  text-align: center;
-  margin-bottom: 4rem;
-  color: #163b4d;//blue
 
   hr {
     margin-left: auto;
@@ -69,7 +73,7 @@ body, .smooth-container { scroll-behavior: smooth }
 .section__subheader {
 
   .primary {
-    color: #eb1c24;//red
+    color: #eb1c24; //red
     font-size: 1.4rem;
   }
 }
@@ -110,7 +114,7 @@ body, .smooth-container { scroll-behavior: smooth }
   }
 
   .section__header {
-    color: #163b4d;//blue
+    color: #163b4d; //blue
   }
 
   .section__wrapper {
@@ -132,7 +136,7 @@ body, .smooth-container { scroll-behavior: smooth }
     }
 
     &:before {
-      background: linear-gradient(to right, rgba(0,0,0,0.0), white);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.0), white);
     }
 
     &:after {
@@ -150,7 +154,7 @@ body, .smooth-container { scroll-behavior: smooth }
  */
 .section--ourvalue {
   color: white;
-  background-color: #163b4d;//blue
+  background-color: #163b4d; //blue
 
   @media (max-width: 959px) {
     .container {
@@ -170,6 +174,7 @@ body, .smooth-container { scroll-behavior: smooth }
     & {
       text-align: center;
     }
+
     .primary {
       color: white;
     }
@@ -244,15 +249,37 @@ body, .smooth-container { scroll-behavior: smooth }
     height: 4rem;
   }
 
-  .icon--mb-1x { margin-bottom: 1rem; }
+  .icon--mb-1x {
+    margin-bottom: 1rem;
+  }
 
-  .icon--urbansitter { height: 10rem; }
-  .icon--glamsquad { height: 8rem; }
-  .icon--gokid { height: 3rem; }
-  .icon--hintwater { height: 2.5rem; }
-  .icon--lobus { height: 6rem }
-  .icon--fitzframes { height: 3rem }
-  .icon--waggit { height: 3rem }
+  .icon--urbansitter {
+    height: 10rem;
+  }
+
+  .icon--glamsquad {
+    height: 8rem;
+  }
+
+  .icon--gokid {
+    height: 3rem;
+  }
+
+  .icon--hintwater {
+    height: 2.5rem;
+  }
+
+  .icon--lobus {
+    height: 6rem
+  }
+
+  .icon--fitzframes {
+    height: 3rem
+  }
+
+  .icon--waggit {
+    height: 3rem
+  }
 
   // @media (min-width: 960px) {
   //   .row:last-child {
@@ -260,7 +287,8 @@ body, .smooth-container { scroll-behavior: smooth }
   //   }
   // }
 
-  @media (max-width: 959px) {}
+  @media (max-width: 959px) {
+  }
 }
 
 /*
@@ -273,7 +301,7 @@ body, .smooth-container { scroll-behavior: smooth }
 
   .section__background {
     &:before {
-      background-color: rgba(0,0,0,0.8);
+      background-color: rgba(0, 0, 0, 0.8);
     }
   }
 
@@ -320,7 +348,7 @@ body, .smooth-container { scroll-behavior: smooth }
       display: block;
       font-weight: 700;
       text-transform: uppercase;
-      color: #eb1c24;//red
+      color: #eb1c24; //red
       margin-top: $line-height * 1rem;
     }
   }
@@ -337,7 +365,7 @@ body, .smooth-container { scroll-behavior: smooth }
  */
 .section--ourteam {
   color: white;
-  background-color: #163b4d;//blue
+  background-color: #163b4d; //blue
 
   @media (max-width: 959px) {
     .container {
@@ -456,10 +484,10 @@ body, .smooth-container { scroll-behavior: smooth }
 /*
  *media section
  */
- .section--media {
-   
+.section--media {
+
   background-color: #f2f2f2;
- }
+}
 
 /*
  *section contactus
@@ -526,11 +554,11 @@ body, .smooth-container { scroll-behavior: smooth }
   background-repeat: no-repeat;
 
   // @media (max-width: 959px) {
-    margin-bottom: $line-height * 1.5rem;
+  margin-bottom: $line-height * 1.5rem;
   // }
 
   &--shelly-kapoor-collins {
-     background-image: url('../img/advisor__shelly.jpg');
+    background-image: url('../img/advisor__shelly.jpg');
   }
 
   &--jennifer-johnson {
@@ -550,20 +578,20 @@ body, .smooth-container { scroll-behavior: smooth }
   }
 
   &--cameron-yuill {
-     background-image: url('../img/advisor__cameron-yuill.jpg');
-     background-position: -1px center;
+    background-image: url('../img/advisor__cameron-yuill.jpg');
+    background-position: -1px center;
   }
 
   &--alison-pincus {
-     background-image: url('../img/advisor__alison-pincus.jpg');
+    background-image: url('../img/advisor__alison-pincus.jpg');
   }
 
   &--karen-page {
-     background-image: url('../img/advisor__karen-page.jpg');
+    background-image: url('../img/advisor__karen-page.jpg');
   }
 
   &--rangita {
-     background-image: url('../img/advisor__rangita.jpg');
+    background-image: url('../img/advisor__rangita.jpg');
   }
 }
 
@@ -586,10 +614,10 @@ body, .smooth-container { scroll-behavior: smooth }
     width: 100%;
     padding: 0.8rem 1.2rem;
     transition: background-color 0.2s ease-in-out;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 
     &:hover {
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.6);
     }
   }
 

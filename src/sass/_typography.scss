@@ -138,6 +138,12 @@ hr {
   color: #eb1c24 !important; //red
 }
 
+.text-red-lg-down {
+  @media (max-width: 959px) {
+    color: #eb1c24 !important; //red
+  }
+}
+
 .text-blue {
   color: #163b4d; //blue
 }
@@ -156,8 +162,24 @@ hr {
   color: #000000; // black
 }
 
+.bg-red {
+  background-color: #eb1c24;
+}
+
+.bg-red-lg-up {
+  @media (min-width: 960px) {
+    background-color: #eb1c24;
+  }
+}
+
 .bg-black {
   background-color: black;
+}
+
+.bg-black-lg-down {
+  @media (max-width: 959px) {
+    background-color: black;
+  }
 }
 
 .bg-white {
@@ -225,39 +247,120 @@ hr {
   background-color: grey;
 }
 
+%foundation-images {
+  background-size: cover;
+  background-position: center;
+}
+
+.img-foundation-what {
+  @extend %foundation-images;
+  background-image: url("../../img/shatter-foundation-what-web.jpg");
+}
+
+.img-foundation-why {
+  @extend %foundation-images;
+  background-image: url("../../img/shatter-foundation-why-web.jpg");
+}
+
+.img-foundation-how {
+  @extend %foundation-images;
+  background-image: url("../../img/shatter-foundation-how-web.jpg");
+}
+
+.img-foundation-membership {
+  @extend %foundation-images;
+  background-image: url("../../img/shatter-foundation-membership-web.jpg");
+}
+
+.img-foundation-hero {
+  @extend %foundation-images;
+  background-image: url("../../img/shatter-foundation-hero-web.jpg");
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+.foundation-advisor {
+  @extend %foundation-images;
+}
+
+.visible-lg-down {
+  display: none;
+  @media (max-width: 959px) {
+    display: block;
+  }
+}
+
 @media (min-width: 960px) {
-  %color {
-    width: 50%;
-    height: 200%;
-    background-color: red;
-    border-left: 1rem solid white;
-  }
-
-  .bottom-left-red-triangle {
-    @extend %color;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform-origin: bottom left;
-    transform: rotateZ(15deg);
-  }
-
-  .top-left-red-triangle {
-    @extend %color;
+  %base {
+    content: "";
+    display: block;
+    height: 100%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform-origin: top left;
-    transform: rotateZ(-15deg);
   }
 
-  .hero-top-left-red-triangle {
-    @extend %color;
+  .triangle-variant-1 {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform-origin: top left;
-    transform: rotateZ(-15deg);
-    background-color: grey;
+    right: 50%;
+    height: 100%;
+    width: 75%;
+    background-color: black;
+    transform: rotateZ(0deg);
+    transform-origin: bottom right;
+
+    // background
+    &:before {
+      @extend %base;
+      background-color: black;
+      right: -14rem;
+      transform: skew(15deg, 0deg) translateX(-50%);
+      width: 14rem;
+      z-index: 2;
+    }
+
+    // border
+    &:after {
+      @extend %base;
+      background-color: white;
+      right: -8rem;
+      transform: skew(15deg, 0deg);
+      width: 1rem;
+      z-index: 1;
+    }
+  }
+
+  .triangle-variant-2 {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 100%;
+    width: 75%;
+    background-color: black;
+    transform: rotateZ(0deg);
+    transform-origin: bottom right;
+
+    // background
+    &:before {
+      @extend %base;
+      background-color: black;
+      right: -14rem;
+      transform: skew(-15deg, 0deg) translateX(-50%);
+      width: 14rem;
+      z-index: 2;
+    }
+
+    // border
+    &:after {
+      @extend %base;
+      background-color: white;
+      right: -8rem;
+      transform: skew(-15deg, 0deg);
+      width: 1rem;
+      z-index: 1;
+    }
   }
 }

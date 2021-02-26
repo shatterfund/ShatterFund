@@ -280,15 +280,6 @@ body, .smooth-container {
   .icon--waggit {
     height: 3rem
   }
-
-  // @media (min-width: 960px) {
-  //   .row:last-child {
-  //     margin-top: 3rem;
-  //   }
-  // }
-
-  @media (max-width: 959px) {
-  }
 }
 
 /*
@@ -553,9 +544,7 @@ body, .smooth-container {
   background-size: cover;
   background-repeat: no-repeat;
 
-  // @media (max-width: 959px) {
   margin-bottom: $line-height * 1.5rem;
-  // }
 
   &--shelly-kapoor-collins {
     background-image: url('../img/advisor__shelly.jpg');

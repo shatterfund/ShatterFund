@@ -6,7 +6,9 @@
     obj = obj || window;
     var running = false;
     var func = function () {
-      if (running) { return; }
+      if (running) {
+        return;
+      }
       running = true;
       requestAnimationFrame(function () {
         obj.dispatchEvent(new CustomEvent(name));
@@ -53,7 +55,7 @@ const swiperHero = new Swiper('.swiper-hero', Object.assign({
   },
   speed: 1250,
 }, swiperOptions));
-const swiperQuotes = new Swiper('.swiper-quotes', Object.assign({ grabCursor: true }, swiperOptions));
+const swiperQuotes = new Swiper('.swiper-quotes', Object.assign({grabCursor: true}, swiperOptions));
 
 
 /*

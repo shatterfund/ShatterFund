@@ -103,6 +103,13 @@ var GoogleMapHeight = (function () {
   var googleMapHeightRef = document.querySelector('.js-google-map__height');
   var googleMapIframe = document.querySelector('.js-google-map__iframe');
 
+  if (!googleMapIframe || !googleMapHeightRef) {
+    return {
+      init: function () {
+      }
+    };
+  }
+
   function Init() {
     _SetHeight();
     window.addEventListener("optimizedResize", _SetHeight);

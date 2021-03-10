@@ -90,6 +90,7 @@
       color: white;
       transition-property: background-color 0.125s ease-in-out;
 
+      &--active,
       &.is-inview,
       &:hover {
         background-color: mix(black, #163b4d, 20%);//dark blue

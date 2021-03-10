@@ -275,12 +275,13 @@ hr {
 .img-foundation-hero {
   @extend %foundation-images;
   background-image: url("../../img/shatter-foundation-hero-web.jpg");
+  background-position-x: right;
   @media (min-width: 960px) {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 40%;
     height: 100%;
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -307,7 +308,7 @@ hr {
   .triangle-variant-1 {
     position: absolute;
     top: 0;
-    right: 50%;
+    right: 60%;
     height: 100%;
     width: 75%;
     background-color: black;
@@ -338,7 +339,7 @@ hr {
   .triangle-variant-2 {
     position: absolute;
     top: 0;
-    right: 50%;
+    right: 60%;
     height: 100%;
     width: 75%;
     background-color: black;

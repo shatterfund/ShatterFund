@@ -1,724 +1,812 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shatter Fund</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="manifest" href="img/site.webmanifest">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shatter Fund</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+  </head>
 
-<body>
-  <!--
-  -nav
-  -->
-  <header class="header">
-    <nav class="nav nav--header">
-      <div class="nav__container container">
-        <div class="nav__group nav__logo">
-          <a class="nav__item nav__link" href="#">
-            <img class="logo" src="img/logo.svg" alt="Shatter Fund Logo">
+  <body>
+    <script>
+      // NOTE: bypassing silly scrollspy before navigating to gatsby
+      function handleClick(event) {
+        event.preventDefault();
+        window.location.href = window.location.origin + '/foundation/';
+      }
+    </script>
+    <!--
+    -nav
+    -->
+    <header class="header">
+      <nav class="nav nav--header">
+        <div class="nav__container container">
+          <div class="nav__group nav__logo">
+            <a class="nav__item nav__link" href="./index.html">
+              <img class="logo" src="img/logo.svg" alt="Shatter Fund Logo">
+            </a>
+          </div>
+          <div id="js-scrollspy" class="nav__mobile-menu js-nav__mobile-menu">
+            <button type="button" class="nav__link nav__mobile-menu__toggle"
+                    id="mobileMenuToggle">
+              menu
+            </button>
+            <div
+              class="nav__mobile-menu__menu js-nav__mobile-menu__menu js-scrollspy-nav">
+              <a class="nav__item nav__link" href="#thefund">The Fund</a>
+              <a class="nav__item nav__link" href="#foundation"
+                 onclick="handleClick(event)">Foundation
+              </a>
+              <a class="nav__item nav__link" href="#ourvalue">Our Value</a>
+              <a class="nav__item nav__link"
+                 href="#whereweinvest">Our Focus Areas
+              </a>
+              <a class="nav__item nav__link" href="#portfolio">Portfolio</a>
+              <a class="nav__item nav__link" href="#ourteam">Team</a>
+              <a class="nav__item nav__link" href="#press">Press</a>
+              <a class="nav__item nav__link" href="#media">Media</a>
+              <a class="nav__item nav__link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+    -hero
+    -->
+    <div class="hero">
+      <div class="hero__container container">
+        <header class="hero__header">
+          <h1 class="primary">Shatter Fund</h1>
+          <hr>
+          <p class="secondary">Scaling Up Female Entrepreneurship</p>
+          <a class="btn btn--hero" href="#testimonials">Read Our Testimonials
           </a>
+          <a class="btn btn--primary" target="_blank"
+             href="https://shattersummit2021.splashthat.com/">SHATTER SUMMIT March 10, 2021
+          </a>
+        </header>
+      </div>
+      <!--  <footer class="hero__footer">-->
+      <!--    <div class="container">-->
+      <!--      <h3>The biggest emerging market in the world is not China; <strong>it's women.</strong></h3>-->
+      <!--      <small style="opacity: 0.75; margin-top: 0.5rem; display: block;">- Sylvia Ann Hewlett, Chair and CEO of the Center for Talent Innovation</small>-->
+      <!--    </div>-->
+      <!--  </footer>-->
+      <footer class="hero__footer">
+        <div class="container">
+          <h3
+            style="font-style: italic;">&ldquo;Each time a woman stands up for herself, without knowing it possibly,
+            without claiming it, she stands up for all women.&rdquo;</h3>
+          <small
+            style="opacity: 0.6; margin-top: 0.5rem; display: block;">— Maya Angelo</small>
         </div>
-        <div id="js-scrollspy" class="nav__mobile-menu js-nav__mobile-menu">
-          <button type="button" class="nav__link nav__mobile-menu__toggle" id="mobileMenuToggle">
-            menu
-          </button>
-          <div class="nav__mobile-menu__menu js-nav__mobile-menu__menu js-scrollspy-nav">
-            <a class="nav__item nav__link" href="#thefund">The Fund</a>
-            <a class="nav__item nav__link" href="#ourvalue">Our Value</a>
-            <a class="nav__item nav__link" href="#whereweinvest">Our Focus Areas</a>
-            <a class="nav__item nav__link" href="#portfolio">Portfolio</a>
-            <a class="nav__item nav__link" href="#ourteam">Our Team</a>
-            <a class="nav__item nav__link" href="#press">Press</a>
-            <a class="nav__item nav__link" href="#media">Media</a>
-            <a class="nav__item nav__link" href="#contact">Contact</a>
+      </footer>
+    </div>
+    <!--
+    -quotes
+    -->
+    <div class="anchor" id="testimonials"></div>
+    <section class="section section--quotes">
+      <div class="section__wrapper">
+        <div class="container">
+          <!--
+          -slider START
+          -->
+          <div class="swiper-quotes">
+            <div class="swiper-wrapper mb1">
+              <div class="swiper-slide">
+                <blockquote>
+                  <h2
+                    class="heading">Shatter Fund is boldly redefining lifestyle - empowering companies with women
+                    leaders to transform their lives and their communities.</h2>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote>
+                  <h2
+                    class="heading">We seek out companies that Break Big. Break Big means redefining the rules. Break
+                    Big is about pushing past the limits of the possible.</h2>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote>
+                  <h2
+                    class="heading">We have powerful partners and advisors working along-side women-led firms to break
+                    big.</h2>
+                </blockquote>
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!--
+          - slider END
+          -->
+        </div>
+      </div>
+      <div class="section__background"></div>
+    </section>
+    <!--
+    -#TheFund
+    -->
+    <div class="anchor" id="thefund"></div>
+    <section class="section section--thefund">
+      <div class="section__wrapper">
+        <div class="container">
+          <div class="row">
+            <header class="section__header text-blue text-center mb-4x">
+              <h2 class="primary">The Shatter Fund</h2>
+              <hr>
+            </header>
+          </div>
+          <div class="row" style="z-index: 100; position: relative;">
+            <div class="column column--6-12 column--offset--6-12">
+              <header class="section__subheader mb1">
+                <h3 class="primary">We
+                  <strong>WANT</strong> to be<br><em>"just another statistic"</em>
+                </h3>
+              </header>
+              <p>Historically, companies with female founders
+                <strong>performed 66% better</strong> than those with all
+                male-founders.</p>
+              <p>That is why the Shatter Fund
+                <strong>exclusively invests</strong> in high potential disruptive technology
+                companies led by female entrepreneurs. </p>
+              <p><strong>It's in the data.</strong></p>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <!--
-  -hero
-  -->
-  <div class="hero">
-    <div class="hero__container container">
-      <header class="hero__header">
-        <h1 class="primary">Shatter Fund</h1>
-        <hr>
-        <p class="secondary">Scaling Up Female Entrepreneurship</p>
-        <a class="btn btn--hero" href="#testimonials">Read Our Testimonials</a>
-        <a class="btn btn--primary" target="_blank" href="https://shattersummit2021.splashthat.com/">SHATTER SUMMIT March 10, 2021</a>
-      </header>
-    </div>
-  <!--  <footer class="hero__footer">-->
-  <!--    <div class="container">-->
-  <!--      <h3>The biggest emerging market in the world is not China; <strong>it's women.</strong></h3>-->
-  <!--      <small style="opacity: 0.75; margin-top: 0.5rem; display: block;">- Sylvia Ann Hewlett, Chair and CEO of the Center for Talent Innovation</small>-->
-  <!--    </div>-->
-  <!--  </footer>-->
-    <footer class="hero__footer">
-      <div class="container">
-        <h3 style="font-style: italic;">&ldquo;Each time a woman stands up for herself, without knowing it possibly,
-          without claiming it, she stands up for all women.&rdquo;</h3>
-        <small style="opacity: 0.6; margin-top: 0.5rem; display: block;">— Maya Angelo</small>
-      </div>
-    </footer>
-  </div>
-  <!--
-  -quotes
-  -->
-  <div class="anchor" id="testimonials"></div>
-  <section class="section section--quotes">
-    <div class="section__wrapper">
-      <div class="container">
-        <!--
-        -slider START
-        -->
-        <div class="swiper-quotes">
-          <div class="swiper-wrapper mb1">
-            <div class="swiper-slide">
-              <blockquote>
-                <h2 class="heading">Shatter Fund is boldly redefining lifestyle - empowering companies with women
-                  leaders to transform their lives and their communities.</h2>
-              </blockquote>
-            </div>
-            <div class="swiper-slide">
-              <blockquote>
-                <h2 class="heading">We seek out companies that Break Big. Break Big means redefining the rules. Break
-                  Big is about pushing past the limits of the possible.</h2>
-              </blockquote>
-            </div>
-            <div class="swiper-slide">
-              <blockquote>
-                <h2 class="heading">We have powerful partners and advisors working along-side women-led firms to break
-                  big.</h2>
-              </blockquote>
-            </div>
-          </div>
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-        <!--
-        - slider END
-        -->
-      </div>
-    </div>
-    <div class="section__background"></div>
-  </section>
-  <!--
-  -#TheFund
-  -->
-  <div class="anchor" id="thefund"></div>
-  <section class="section section--thefund">
-    <div class="section__wrapper">
+      <div class="section__background"></div>
+    </section>
+    <!--
+    -#OurValue
+    -->
+    <div class="anchor" id="ourvalue"></div>
+    <section class="section section--ourvalue">
       <div class="container">
         <div class="row">
           <header class="section__header text-blue text-center mb-4x">
-            <h2 class="primary">The Shatter Fund</h2>
+            <h2 class="primary">Our Value</h2>
+            <hr>
+          </header>
+          <div class="section__body">
+            <header class="section__subheader">
+              <h3 class="primary mb1">
+                <strong>Shatter's value goes beyond a check.</strong>
+              </h3>
+              <p>The Shatter team is a fully engaged strategic partner to our porfolio companies for distribution,
+                resources, mentorship and access to our vast network of operators and investors.</p>
+            </header>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column column--4-12">
+            <div class="panel">
+              <div class="svg">
+                <img class="icon" src="img/icon__money-flower.svg" alt="flower">
+              </div>
+              <p>Drive returns for investors as the premier investment fund for women entrepreneurs</p>
+            </div>
+          </div>
+          <div class="column column--4-12">
+            <div class="panel">
+              <div class="svg">
+                <img class="icon" src="img/icon__trophy-bar.svg" alt="trophy">
+              </div>
+              <p>Drive new economic growth and spur innovation</p>
+            </div>
+          </div>
+          <div class="column column--4-12">
+            <div class="panel">
+              <div class="svg">
+                <img class="icon" src="img/icon__lady.svg"
+                     alt="female entrepreneur">
+              </div>
+              <p>Close the gender gap by providing the go-to funding opportunity for female entrepreneurs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+    -#WhereWeInvest
+    -->
+    <div class="anchor" id="whereweinvest"></div>
+    <section class="section section--whereweinvest">
+      <div class="container">
+        <div class="row">
+          <header class="section__header text-blue text-center mb-4x">
+            <h2 class="primary">Our Focus Areas</h2>
             <hr>
           </header>
         </div>
-        <div class="row" style="z-index: 100; position: relative;">
-          <div class="column column--6-12 column--offset--6-12">
-            <header class="section__subheader mb1">
-              <h3 class="primary">We <strong>WANT</strong> to be<br><em>"just another statistic"</em></h3>
+        <div class="row">
+          <div class="column column--7-12">
+            <header class="section__subheader">
+              <h3 class="primary">
+                <p><strong>There are not enough female entrepreneurs.</strong>
+                </p>
+                <p
+                  style="font-size: 1rem; margin-top: 0.7rem;">In fact, men made up 59.4% of all new entrepreneurs in
+                  2016*.</p>
+              </h3>
             </header>
-            <p>Historically, companies with female founders <strong>performed 66% better</strong> than those with all
-              male-founders.</p>
-            <p>That is why the Shatter Fund <strong>exclusively invests</strong> in high potential disruptive technology
-              companies led by female entrepreneurs. </p>
-            <p><strong>It's in the data.</strong></p>
+            <div>
+              <p>Legacy industries such as Healthcare, Education and Finance, where women are the majority of the
+                workforce and largely the end-customer are ripe for disruption. We are actively seeking women
+                entrepreneurs who want to scale their innovative companies in these spaces. And, we are seeking women led
+                technology companies in general.</p>
+              <p>Women should be building solutions “for” women. Many issues that concern millions of women still lack
+                innovative solutions because women fight an uphill battle as entrepreneurs.</p>
+              <small>*2016 Kauffman Index of Startup Activity</small>
+            </div>
+          </div>
+          <div class="column column--5-12">
+            <div class="svg">
+              <img class="icon" src="img/icon__investment-cycle.svg"
+                   alt="investment cycle">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section__background"></div>
-  </section>
-  <!--
-  -#OurValue
-  -->
-  <div class="anchor" id="ourvalue"></div>
-  <section class="section section--ourvalue">
-    <div class="container">
-      <div class="row">
-        <header class="section__header text-blue text-center mb-4x">
-          <h2 class="primary">Our Value</h2>
-          <hr>
-        </header>
-        <div class="section__body">
-          <header class="section__subheader">
-            <h3 class="primary mb1">
-              <strong>Shatter's value goes beyond a check.</strong>
-            </h3>
-            <p>The Shatter team is a fully engaged strategic partner to our porfolio companies for distribution,
-              resources, mentorship and access to our vast network of operators and investors.</p>
+    </section>
+    <!--
+    -#Portfolio
+    -->
+    <div class="anchor" id="portfolio"></div>
+    <section class="section section--portfolio">
+      <div class="container">
+        <div class="row">
+          <header class="section__header text-blue text-center mb-4x">
+            <h2 class="primary">Our Portfolio</h2>
+            <hr>
           </header>
         </div>
-      </div>
-      <div class="row">
-        <div class="column column--4-12">
-          <div class="panel">
-            <div class="svg">
-              <img class="icon" src="img/icon__money-flower.svg" alt="flower">
-            </div>
-            <p>Drive returns for investors as the premier investment fund for women entrepreneurs</p>
+        <div class="row">
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://www.urbansitter.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--urbansitter"
+                     src="img/logo__urbansitter.svg" alt="logo for urbansitter">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://key.co/" target="_blank">
+              <div class="svg">
+                <img class="icon icon--key" src="img/logo__key.png"
+                     alt="logo for key conceirge">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://www.glamsquad.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--glamsquad" src="img/logo__glamsquad.svg"
+                     alt="logo for glamsquad">
+              </div>
+            </a>
           </div>
         </div>
-        <div class="column column--4-12">
-          <div class="panel">
-            <div class="svg">
-              <img class="icon" src="img/icon__trophy-bar.svg" alt="trophy">
-            </div>
-            <p>Drive new economic growth and spur innovation</p>
+        <div class="row">
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://www.gokid.mobi/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--gokid"
+                     src="img/logo__gokid.png" alt="logo for gokid">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://helloalice.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--helloalice"
+                     src="img/logo__hello-alice.png" alt="logo for hello alice">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://www.drinkhint.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--hintwater"
+                     src="img/logo__hint-water.svg" alt="logo for hint water">
+              </div>
+            </a>
           </div>
         </div>
-        <div class="column column--4-12">
-          <div class="panel">
-            <div class="svg">
-              <img class="icon" src="img/icon__lady.svg" alt="female entrepreneur">
-            </div>
-            <p>Close the gender gap by providing the go-to funding opportunity for female entrepreneurs</p>
+        <div class="row">
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://lobus.io/" target="_blank">
+              <div class="svg">
+                <img class="icon icon--lobus" src="img/logo__lobus.png"
+                     alt="logo for lobus">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://www.fitzframes.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--fitzframes"
+                     src="img/logo__fitzframes.png" alt="logo for fitzframes">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://www.blockpartyapp.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--blockparty"
+                     src="img/logo__blockparty.png" alt="logo for blockparty">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://join.shinetext.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--shine"
+                     src="img/logo__shine.png" alt="logo for shine">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://www.eventhollow.com/"
+               target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--eventhollow"
+                     src="img/logo__eventhollow.png"
+                     alt="logo for eventhollow">
+              </div>
+            </a>
+          </div>
+          <div class="column column--4-12">
+            <a class="logo__link" href="https://waggit.dog/" target="_blank">
+              <div class="svg">
+                <img class="icon icon--mb-1x icon--waggit"
+                     src="img/logo__waggit.webp" alt="logo for waggit">
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--
-  -#WhereWeInvest
-  -->
-  <div class="anchor" id="whereweinvest"></div>
-  <section class="section section--whereweinvest">
-    <div class="container">
-      <div class="row">
-        <header class="section__header text-blue text-center mb-4x">
-          <h2 class="primary">Our Focus Areas</h2>
-          <hr>
-        </header>
-      </div>
-      <div class="row">
-        <div class="column column--7-12">
-          <header class="section__subheader">
-            <h3 class="primary">
-              <p><strong>There are not enough female entrepreneurs.</strong></p>
-              <p style="font-size: 1rem; margin-top: 0.7rem;">In fact, men made up 59.4% of all new entrepreneurs in
-                2016*.</p>
-            </h3>
+    </section>
+    <!--
+    -#OurTeam
+    -->
+    <div class="anchor" id="ourteam"></div>
+    <section class="section section--ourteam section--ouradvisors">
+      <div class="container">
+        <div class="row">
+          <header class="section__header text-blue text-center mb-4x">
+            <h2 class="primary">Our Team</h2>
+            <hr>
           </header>
-          <div>
-            <p>Legacy industries such as Healthcare, Education and Finance, where women are the majority of the
-              workforce and largely the end-customer are ripe for disruption. We are actively seeking women
-              entrepreneurs who want to scale their innovative companies in these spaces. And, we are seeking women led
-              technology companies in general.</p>
-            <p>Women should be building solutions “for” women. Many issues that concern millions of women still lack
-              innovative solutions because women fight an uphill battle as entrepreneurs.</p>
-            <small>*2016 Kauffman Index of Startup Activity</small>
+        </div>
+        <div class="row row--flex-center">
+          <div class="column column--3-12">
+            <figure class="advisor advisor--shelly-kapoor-collins">
+              <figcaption class="advisor__name">
+                <a href="https://www.linkedin.com/in/shellykapoorcollins/"
+                   target="_blank">
+                  <span class="advisor__title">shelly kapoor collins</span>
+                  <small>FOUNDING PARTNER</small>
+                </a>
+              </figcaption>
+            </figure>
           </div>
         </div>
-        <div class="column column--5-12">
-          <div class="svg">
-            <img class="icon" src="img/icon__investment-cycle.svg" alt="investment cycle">
+        <div class="row">
+          <div class="column column--3-12">
+            <figure class="advisor advisor--jennifer-johnson">
+              <figcaption class="advisor__name">
+                <a href="https://www.linkedin.com/in/jennifer-johnson-76726010/"
+                   target="_blank">
+                  <span class="advisor__title">Jennifer Johnson</span>
+                  <small>ADVISOR</small>
+                </a>
+              </figcaption>
+            </figure>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--
-  -#Portfolio
-  -->
-  <div class="anchor" id="portfolio"></div>
-  <section class="section section--portfolio">
-    <div class="container">
-      <div class="row">
-        <header class="section__header text-blue text-center mb-4x">
-          <h2 class="primary">Our Portfolio</h2>
-          <hr>
-        </header>
-      </div>
-      <div class="row">
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://www.urbansitter.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--urbansitter" src="img/logo__urbansitter.svg" alt="logo for urbansitter">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://key.co/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--key" src="img/logo__key.png" alt="logo for key conceirge">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://www.glamsquad.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--glamsquad" src="img/logo__glamsquad.svg" alt="logo for glamsquad">
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://www.gokid.mobi/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--gokid" src="img/logo__gokid.png" alt="logo for gokid">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://helloalice.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--helloalice" src="img/logo__hello-alice.png" alt="logo for hello alice">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://www.drinkhint.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--hintwater" src="img/logo__hint-water.svg" alt="logo for hint water">
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://lobus.io/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--lobus" src="img/logo__lobus.png" alt="logo for lobus">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://www.fitzframes.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--fitzframes" src="img/logo__fitzframes.png" alt="logo for fitzframes">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://www.blockpartyapp.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--blockparty" src="img/logo__blockparty.png" alt="logo for blockparty">
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://join.shinetext.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--shine" src="img/logo__shine.png" alt="logo for shine">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://www.eventhollow.com/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--eventhollow" src="img/logo__eventhollow.png"
-                alt="logo for eventhollow">
-            </div>
-          </a>
-        </div>
-        <div class="column column--4-12">
-          <a class="logo__link" href="https://waggit.dog/" target="_blank">
-            <div class="svg">
-              <img class="icon icon--mb-1x icon--waggit" src="img/logo__waggit.webp" alt="logo for waggit">
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--
-  -#OurTeam
-  -->
-  <div class="anchor" id="ourteam"></div>
-  <section class="section section--ourteam section--ouradvisors">
-    <div class="container">
-      <div class="row">
-        <header class="section__header text-blue text-center mb-4x">
-          <h2 class="primary">Our Team</h2>
-          <hr>
-        </header>
-      </div>
-      <div class="row row--flex-center">
-        <div class="column column--3-12">
-          <figure class="advisor advisor--shelly-kapoor-collins">
-            <figcaption class="advisor__name">
-              <a href="https://www.linkedin.com/in/shellykapoorcollins/" target="_blank">
-                <span class="advisor__title">shelly kapoor collins</span>
-                <small>FOUNDING PARTNER</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column--3-12">
-          <figure class="advisor advisor--jennifer-johnson">
-            <figcaption class="advisor__name">
-              <a href="https://www.linkedin.com/in/jennifer-johnson-76726010/" target="_blank">
-                <span class="advisor__title">Jennifer Johnson</span>
-                <small>ADVISOR</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column column--3-12">
-          <figure class="advisor advisor--karen-king">
-            <figcaption class="advisor__name">
-              <a href="https://www.linkedin.com/in/karen-king-76099a2/" target="_blank">
-                <span class="advisor__title">Karen King</span>
-                <small>ADVISOR</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column column--3-12">
-          <figure class="advisor advisor--alison-pincus">
-            <figcaption class="advisor__name">
-              <a href="https://www.linkedin.com/in/alison-gelb-pincus-979b631/" target="_blank">
-                <span class="advisor__title">Alison Pincus</span>
-                <small>ADVISOR</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column column--3-12">
-          <figure class="advisor advisor--catherine-zinn">
-            <figcaption class="advisor__name">
-              <a href="https://www.linkedin.com/in/catherine-zinn-b902732/" target="_blank">
-                <span class="advisor__title">Catherine Zinn</span>
-                <small>ADVISOR</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column column--3-12">
-          <figure class="advisor advisor--emily-davis">
-            <figcaption class="advisor__name">
-              <a href="https://www.linkedin.com/in/emily-davis-4685574/" target="_blank">
-                <span class="advisor__title">Emily Davis</span>
-                <small>ADVISOR</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column column--3-12">
-          <figure class="advisor advisor--karen-page">
-            <figcaption class="advisor__name">
-              <a href="https://www.linkedin.com/in/karenappletonpage/" target="_blank">
-                <span class="advisor__title">Karen Page</span>
-                <small>ADVISOR</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="column column--3-12">
-          <figure class="advisor advisor--rangita">
-            <figcaption class="advisor__name">
-              <a href="https://www.law.upenn.edu/cf/faculty/rdesilva/" target="_blank">
-                <span class="advisor__title">Rangita de Silva de Alwis</span>
-                <small>ADVISOR</small>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--
-  -#press
-  -->
-  <div class="anchor" id="press"></div>
-  <section class="section section--press">
-    <div class="section__wrapper">
-      <div class="container">
-        <header class="section__header text-blue text-center mb-4x">
-          <h3 class="primary"><strong>Press</strong></h3>
-          <h4 style="margin-top: 0.5rem"><em>Read about us in the News!</em></h4>
-          <hr>
-        </header>
-        <div class="section__body" style="text-align: center">
-          <div class="row press">
-            <div class="press__item">
-              <a class="logo__link" href="http://www.diablomag.com/May-2019/" target="_blank">
-                <div class="svg">
-                  <img class="press__logo--diablo" src="img/logo__diablo-mag.jpg" alt="logo for diablo magazine">
-                </div>
-              </a>
-            </div>
-            <div class="press__item">
-              <a class="logo__link"
-                href="https://sanfrancisco.cbslocal.com/2017/06/06/new-bay-area-venture-fund-formed-to-help-women-entrepreneurs/"
-                target="_blank">
-                <div class="svg">
-                  <img class="press__logo--cbs" src="img/logo__cbs.png" alt="logo for cbs">
-                </div>
-              </a>
-            </div>
-            <div class="press__item">
-              <a class="logo__link"
-                href="https://www.forbes.com/sites/stephanrabimov/2017/05/12/5-insights-into-shattering-the-corporate-glass-ceiling-for-women-entrepreneurs"
-                target="_blank">
-                <div class="svg">
-                  <img class="press__logo--forbes" src="img/logo__forbes.png" alt="logo for forbes">
-                </div>
-              </a>
-            </div>
-            <div class="press__item">
-              <a class="logo__link"
-                href="http://www.sfchronicle.com/style/article/Meet-the-venture-capitalist-who-funds-female-11122559.php"
-                target="_blank">
-                <div class="svg">
-                  <img class="press__logo--sf-chronicle" src="img/logo__sanfranciscochronicle.png"
-                    alt="logo for San Francisco Chronicle">
-                </div>
-              </a>
-            </div>
-            <div class="press__item">
-              <a class="logo__link"
-                href="https://www.bizjournals.com/sanfrancisco/news/2017/09/05/upstart-50-shatter-fund-shelly-kapoor-collins.html?b=1504641211%5E21108407#i1"
-                target="_blank">
-                <div class="svg">
-                  <img class="press__logo--sf-biz" src="img/logo__sf-biz.jpg"
-                    alt="logo for san francisco business times">
-                </div>
-              </a>
-            </div>
-            <div class="press__item">
-              <a class="logo__link" href="https://nobhillgazette.com/shelly-kapoor-collins-gets-real/" target="_blank">
-                <div class="svg">
-                  <img class="press__logo--nhg" src="img/logo__NHGstandard.png" alt="logo for nob hill gazette">
-                </div>
-              </a>
-            </div>
+          <div class="column column--3-12">
+            <figure class="advisor advisor--karen-king">
+              <figcaption class="advisor__name">
+                <a href="https://www.linkedin.com/in/karen-king-76099a2/"
+                   target="_blank">
+                  <span class="advisor__title">Karen King</span>
+                  <small>ADVISOR</small>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column column--3-12">
+            <figure class="advisor advisor--alison-pincus">
+              <figcaption class="advisor__name">
+                <a
+                  href="https://www.linkedin.com/in/alison-gelb-pincus-979b631/"
+                  target="_blank">
+                  <span class="advisor__title">Alison Pincus</span>
+                  <small>ADVISOR</small>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column column--3-12">
+            <figure class="advisor advisor--catherine-zinn">
+              <figcaption class="advisor__name">
+                <a href="https://www.linkedin.com/in/catherine-zinn-b902732/"
+                   target="_blank">
+                  <span class="advisor__title">Catherine Zinn</span>
+                  <small>ADVISOR</small>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column column--3-12">
+            <figure class="advisor advisor--emily-davis">
+              <figcaption class="advisor__name">
+                <a href="https://www.linkedin.com/in/emily-davis-4685574/"
+                   target="_blank">
+                  <span class="advisor__title">Emily Davis</span>
+                  <small>ADVISOR</small>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column column--3-12">
+            <figure class="advisor advisor--karen-page">
+              <figcaption class="advisor__name">
+                <a href="https://www.linkedin.com/in/karenappletonpage/"
+                   target="_blank">
+                  <span class="advisor__title">Karen Page</span>
+                  <small>ADVISOR</small>
+                </a>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="column column--3-12">
+            <figure class="advisor advisor--rangita">
+              <figcaption class="advisor__name">
+                <a href="https://www.law.upenn.edu/cf/faculty/rdesilva/"
+                   target="_blank">
+                  <span class="advisor__title">Rangita de Silva de Alwis</span>
+                  <small>ADVISOR</small>
+                </a>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section__background"></div>
-  </section>
-  <!--
-  -#media
-  -->
-  <div class="anchor" id="media"></div>
-  <section class="section section--media">
-    <div class="section__wrapper">
-      <div class="container">
-        <header class="section__header text-blue text-center mb-4x">
-          <h3 class="primary"><strong>Media</strong></h3>
-          <hr>
-        </header>
-        <div class="section__body" style="text-align: center">
-          <div class="row">
-            <div class="column column--4-12">
-              <iframe
-                src="https://anchor.fm/superwomen/embed/episodes/A-Field-Guide-to-Finances-During-COVID-19-with-Wendy-Heilbut-and-Shelly-Kapoor-Collins-ed2i5g/a-a207b63"
-                height="100%" width="100%" frameborder="0" scrolling="no"></iframe>
-            </div>
-            <div class="column column--4-12">
-              <div style="position: relative; padding-bottom: 56.25%">
-                <iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%"
-                  src="https://www.youtube.com/embed/0WSaWMB6rfg" frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+    </section>
+    <!--
+    -#press
+    -->
+    <div class="anchor" id="press"></div>
+    <section class="section section--press">
+      <div class="section__wrapper">
+        <div class="container">
+          <header class="section__header text-blue text-center mb-4x">
+            <h3 class="primary"><strong>Press</strong></h3>
+            <h4 style="margin-top: 0.5rem"><em>Read about us in the News!</em>
+            </h4>
+            <hr>
+          </header>
+          <div class="section__body" style="text-align: center">
+            <div class="row press">
+              <div class="press__item">
+                <a class="logo__link" href="http://www.diablomag.com/May-2019/"
+                   target="_blank">
+                  <div class="svg">
+                    <img class="press__logo--diablo"
+                         src="img/logo__diablo-mag.jpg"
+                         alt="logo for diablo magazine">
+                  </div>
+                </a>
+              </div>
+              <div class="press__item">
+                <a class="logo__link"
+                   href="https://sanfrancisco.cbslocal.com/2017/06/06/new-bay-area-venture-fund-formed-to-help-women-entrepreneurs/"
+                   target="_blank">
+                  <div class="svg">
+                    <img class="press__logo--cbs" src="img/logo__cbs.png"
+                         alt="logo for cbs">
+                  </div>
+                </a>
+              </div>
+              <div class="press__item">
+                <a class="logo__link"
+                   href="https://www.forbes.com/sites/stephanrabimov/2017/05/12/5-insights-into-shattering-the-corporate-glass-ceiling-for-women-entrepreneurs"
+                   target="_blank">
+                  <div class="svg">
+                    <img class="press__logo--forbes" src="img/logo__forbes.png"
+                         alt="logo for forbes">
+                  </div>
+                </a>
+              </div>
+              <div class="press__item">
+                <a class="logo__link"
+                   href="http://www.sfchronicle.com/style/article/Meet-the-venture-capitalist-who-funds-female-11122559.php"
+                   target="_blank">
+                  <div class="svg">
+                    <img class="press__logo--sf-chronicle"
+                         src="img/logo__sanfranciscochronicle.png"
+                         alt="logo for San Francisco Chronicle">
+                  </div>
+                </a>
+              </div>
+              <div class="press__item">
+                <a class="logo__link"
+                   href="https://www.bizjournals.com/sanfrancisco/news/2017/09/05/upstart-50-shatter-fund-shelly-kapoor-collins.html?b=1504641211%5E21108407#i1"
+                   target="_blank">
+                  <div class="svg">
+                    <img class="press__logo--sf-biz" src="img/logo__sf-biz.jpg"
+                         alt="logo for san francisco business times">
+                  </div>
+                </a>
+              </div>
+              <div class="press__item">
+                <a class="logo__link"
+                   href="https://nobhillgazette.com/shelly-kapoor-collins-gets-real/"
+                   target="_blank">
+                  <div class="svg">
+                    <img class="press__logo--nhg"
+                         src="img/logo__NHGstandard.png"
+                         alt="logo for nob hill gazette">
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="section__background"></div>
-  </section>
-
-  <!--
-  -#Contact
-  -->
-  <div class="anchor" id="contact"></div>
-  <section class="section section--contact js-google-map__height">
-    <div class="container container--flush">
-      <div class="row">
-        <div class="column column--6-12">
+    </section>
+    <!--
+    -#media
+    -->
+    <div class="anchor" id="media"></div>
+    <section class="section section--media">
+      <div class="section__wrapper">
+        <div class="container">
           <header class="section__header text-blue text-center mb-4x">
-            <h3 class="primary"><strong>Contact Us</strong></h3>
+            <h3 class="primary"><strong>Media</strong></h3>
             <hr>
           </header>
-          <div class="section__body">
+          <div class="section__body" style="text-align: center">
             <div class="row">
-              <div class="column column--6-12">
-                <div class="media">
-                  <div class="media-object">
-                    <div class="svg">
-                      <img class="icon" src="img/icon__twitter.svg" alt="twitter logo">
-                    </div>
-                  </div>
-                  <div class="media-body">
-                    <a href="mailto:information@shatterfund.com">information@shatterfund.com</a><br>
-                    @ShatterFund
-                  </div>
-                </div>
+              <div class="column column--4-12">
+                <iframe
+                  src="https://anchor.fm/superwomen/embed/episodes/A-Field-Guide-to-Finances-During-COVID-19-with-Wendy-Heilbut-and-Shelly-Kapoor-Collins-ed2i5g/a-a207b63"
+                  height="100%" width="100%" frameborder="0"
+                  scrolling="no"></iframe>
               </div>
-              <div class="column column--6-12">
-                <div class="media">
-                  <div class="media-object">
-                    <div class="svg">
-                      <img class="icon" src="img/icon__marker.svg" alt="map marker">
-                    </div>
-                  </div>
-                  <div class="media-body">
-                    <address>
-                      4115 Blackhawk Plaza Circle<br>
-                      Suite 100<br>
-                      Danville, CA 94506
-                    </address>
-                  </div>
+              <div class="column column--4-12">
+                <div style="position: relative; padding-bottom: 56.25%">
+                  <iframe style="position: absolute; top: 0; left: 0;"
+                          width="100%" height="100%"
+                          src="https://www.youtube.com/embed/0WSaWMB6rfg"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="google-map__wrapper column column--6-12">
-          <div class="google-map">
-            <div class="js-google-map__iframe" id="map"></div>
+        <div class="section__background"></div>
+    </section>
+
+    <!--
+    -#Contact
+    -->
+    <div class="anchor" id="contact"></div>
+    <section class="section section--contact js-google-map__height">
+      <div class="container container--flush">
+        <div class="row">
+          <div class="column column--6-12">
+            <header class="section__header text-blue text-center mb-4x">
+              <h3 class="primary"><strong>Contact Us</strong></h3>
+              <hr>
+            </header>
+            <div class="section__body">
+              <div class="row">
+                <div class="column column--6-12">
+                  <div class="media">
+                    <div class="media-object">
+                      <div class="svg">
+                        <img class="icon" src="img/icon__twitter.svg"
+                             alt="twitter logo">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <a
+                        href="mailto:information@shatterfund.com">information@shatterfund.com
+                      </a>
+                      <br>
+                      @ShatterFund
+                    </div>
+                  </div>
+                </div>
+                <div class="column column--6-12">
+                  <div class="media">
+                    <div class="media-object">
+                      <div class="svg">
+                        <img class="icon" src="img/icon__marker.svg"
+                             alt="map marker">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <address>
+                        4115 Blackhawk Plaza Circle<br>
+                        Suite 100<br>
+                        Danville, CA 94506
+                      </address>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="google-map__wrapper column column--6-12">
+            <div class="google-map">
+              <div class="js-google-map__iframe" id="map"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!--
-  -Footer
-  -->
-  <footer class="footer">
-    <nav class="nav nav--footer">
-      <div class="nav__container container">
-        <div class="nav__group nav__group--justified">
-          <a class="nav__item nav__link" href="#thefund">The Fund</a>
-          <a class="nav__item nav__link" href="#ourvalue">Our Value</a>
-          <a class="nav__item nav__link" href="#whereweinvest">Our Focus Areas</a>
-          <a class="nav__item nav__link" href="#portfolio">Portfolio</a>
-          <a class="nav__item nav__link" href="#ourteam">Our Team</a>
-          <a class="nav__item nav__link" href="#press">Press</a>
-          <a class="nav__item nav__link" href="#contact">Contact</a>
+    </section>
+    <!--
+    -Footer
+    -->
+    <footer class="footer">
+      <nav class="nav nav--footer">
+        <div class="nav__container container">
+          <div class="nav__group nav__group--justified">
+            <a class="nav__item nav__link" href="#thefund">The Fund</a>
+            <a class="nav__item nav__link" href="./foundation/">Foundation</a>
+            <a class="nav__item nav__link" href="#ourvalue">Our Value</a>
+            <a class="nav__item nav__link"
+               href="#whereweinvest">Our Focus Areas
+            </a>
+            <a class="nav__item nav__link" href="#portfolio">Portfolio</a>
+            <a class="nav__item nav__link" href="#ourteam">Team</a>
+            <a class="nav__item nav__link" href="#press">Press</a>
+            <a class="nav__item nav__link" href="#contact">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </footer>
-
-  <!--
-  -script
-  -->
-  <script src="js/scrollspy/scrollspy.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script defer src="js/script.js" type="text/javascript"></script>
-  <script>
-    function GoogleMapInit() {
-      var center = { lat: 37.801016, lng: -121.920921 };
-      var map = new google.maps.Map(document.getElementById('map'), {
-        center: center,
-        zoom: 16,
-        scrollwheel: false,
-        styles: [{
-          "featureType": "administrative",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": "-100"
-          }]
-        }, {
-          "featureType": "administrative.province",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "landscape",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": -100
+      </nav>
+    </footer>
+    <div class="anchor" id="foundation"></div>
+    <!--
+    -script
+    -->
+    <script src="js/scrollspy/scrollspy.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js" type="text/javascript"></script>
+    <script>
+      function GoogleMapInit() {
+        var center = {lat: 37.801016, lng: -121.920921};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: center,
+          zoom: 16,
+          scrollwheel: false,
+          styles: [{
+            "featureType": "administrative",
+            "elementType": "all",
+            "stylers": [{
+              "saturation": "-100"
+            }]
           }, {
-            "lightness": 65
+            "featureType": "administrative.province",
+            "elementType": "all",
+            "stylers": [{
+              "visibility": "off"
+            }]
           }, {
-            "visibility": "on"
-          }]
-        }, {
-          "featureType": "poi",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": -100
+            "featureType": "landscape",
+            "elementType": "all",
+            "stylers": [{
+              "saturation": -100
+            }, {
+              "lightness": 65
+            }, {
+              "visibility": "on"
+            }]
           }, {
-            "lightness": "50"
+            "featureType": "poi",
+            "elementType": "all",
+            "stylers": [{
+              "saturation": -100
+            }, {
+              "lightness": "50"
+            }, {
+              "visibility": "simplified"
+            }]
           }, {
-            "visibility": "simplified"
-          }]
-        }, {
-          "featureType": "road",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": "-100"
-          }]
-        }, {
-          "featureType": "road.highway",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "simplified"
-          }]
-        }, {
-          "featureType": "road.arterial",
-          "elementType": "all",
-          "stylers": [{
-            "lightness": "30"
-          }]
-        }, {
-          "featureType": "road.local",
-          "elementType": "all",
-          "stylers": [{
-            "lightness": "40"
-          }]
-        }, {
-          "featureType": "transit",
-          "elementType": "all",
-          "stylers": [{
-            "saturation": -100
+            "featureType": "road",
+            "elementType": "all",
+            "stylers": [{
+              "saturation": "-100"
+            }]
           }, {
-            "visibility": "simplified"
-          }]
-        }, {
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [{
-            "hue": "#ffff00"
+            "featureType": "road.highway",
+            "elementType": "all",
+            "stylers": [{
+              "visibility": "simplified"
+            }]
           }, {
-            "lightness": -25
+            "featureType": "road.arterial",
+            "elementType": "all",
+            "stylers": [{
+              "lightness": "30"
+            }]
           }, {
-            "saturation": -97
-          }]
-        }, {
-          "featureType": "water",
-          "elementType": "labels",
-          "stylers": [{
-            "lightness": -25
+            "featureType": "road.local",
+            "elementType": "all",
+            "stylers": [{
+              "lightness": "40"
+            }]
           }, {
-            "saturation": -100
+            "featureType": "transit",
+            "elementType": "all",
+            "stylers": [{
+              "saturation": -100
+            }, {
+              "visibility": "simplified"
+            }]
+          }, {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [{
+              "hue": "#ffff00"
+            }, {
+              "lightness": -25
+            }, {
+              "saturation": -97
+            }]
+          }, {
+            "featureType": "water",
+            "elementType": "labels",
+            "stylers": [{
+              "lightness": -25
+            }, {
+              "saturation": -100
+            }]
           }]
-        }]
-      });
-      var marker = new google.maps.Marker({
-        position: center,
-        map: map
-      })
-    }
-  </script>
-  <script defer async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4uN_JRK5Ol32jr74Gl7Dlw98lLb6Rad0&callback=GoogleMapInit"></script>
-  <script src="js/zenscroll/zenscroll-min.js" type="text/javascript"></script>
-</body>
+        });
+        var marker = new google.maps.Marker({
+          position: center,
+          map: map
+        })
+      }
+    </script>
+    <script defer async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4uN_JRK5Ol32jr74Gl7Dlw98lLb6Rad0&callback=GoogleMapInit"></script>
+    <script src="js/zenscroll/zenscroll-min.js" type="text/javascript"></script>
+  </body>
 
 </html>

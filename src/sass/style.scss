@@ -230,6 +230,7 @@ body, .smooth-container {
 /*
  *section portfolio
  */
+.section--partnerships,
 .section--portfolio {
 
   @media (min-width: 960px) {
@@ -280,6 +281,18 @@ body, .smooth-container {
   .icon--waggit {
     height: 3rem
   }
+}
+
+.icon--university-of-md {
+  height: 10rem
+}
+
+.icon--ladies-first {
+  height: 10rem
+}
+
+.icon--bank-of-america {
+  height: 10rem
 }
 
 /*

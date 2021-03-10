@@ -275,11 +275,13 @@ hr {
 .img-foundation-hero {
   @extend %foundation-images;
   background-image: url("../../img/shatter-foundation-hero-web.jpg");
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 100%;
-  width: 50%;
+  @media (min-width: 960px) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+  }
 }
 
 .foundation-advisor {

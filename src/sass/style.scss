@@ -283,21 +283,34 @@ body, .smooth-container {
   }
 }
 
-.icon--university-of-md {
-  height: 10rem
+@media (min-width: 960px) {
+  .icon--university-of-md,
+  .icon--ladies-first,
+  .icon--bank-of-america,
+  .icon--franklin-templeton {
+    height: auto;
+  }
 }
 
-.icon--ladies-first {
-  height: 10rem
-}
+@media (max-width: 959px) {
+  .icon--university-of-md {
+    height: 20rem;
+  }
 
-.icon--bank-of-america {
-  height: 10rem
-}
+  .icon--ladies-first {
+    height: 14rem;
+  }
 
-//.icon--franklin-templeton {
-//  height: 10rem
-//}
+  .icon--bank-of-america {
+    height: 4rem;
+    margin-top: 2rem;
+  }
+
+  .icon--franklin-templeton {
+    height: 4rem;
+    margin-top: 2rem;
+  }
+}
 
 /*
  *section quotes

@@ -506,8 +506,14 @@ body, .smooth-container {
  *media section
  */
 .section--media {
-
   background-color: #f2f2f2;
+
+  .row + .row,
+  .column + .column {
+    @media (max-width: 959px) {
+      margin-top: 2rem;
+    }
+  }
 }
 
 /*

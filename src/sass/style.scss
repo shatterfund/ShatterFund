@@ -29,6 +29,23 @@ body, .smooth-container {
   scroll-behavior: smooth
 }
 
+/**
+ *list
+ */
+.list {}
+
+.list--links li + li {
+  margin-top: 1rem;
+}
+
+.list--links a {
+  color: #eb1c24;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 /*
  *section
  */
@@ -184,6 +201,9 @@ body, .smooth-container {
     max-width: 30rem;
     margin: 0 auto;
     margin-bottom: ($line-height * 4) * 1rem;
+  }
+
+  .section__body--sub {
   }
 
   .column {
@@ -446,6 +466,11 @@ body, .smooth-container {
  *press section
  */
 .section--press {
+
+  .white-papers {
+    max-width: 40rem;
+    margin: 4rem auto 0;
+  }
 
   .section__wrapper {
     padding-bottom: 0;

@@ -533,7 +533,10 @@ body, .smooth-container {
 .section--media {
   background-color: #f2f2f2;
 
-  .row + .row,
+  .row + .row {
+    margin-top: 2rem;
+  }
+
   .column + .column {
     @media (max-width: 959px) {
       margin-top: 2rem;

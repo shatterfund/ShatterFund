@@ -272,6 +272,11 @@ hr {
   background-image: url("../../img/shatter-foundation-membership-web.jpg");
 }
 
+.img-times-square {
+  @extend %foundation-images;
+  background-image: url("../../img/shatter-fund-times-square-web.jpg");
+}
+
 .img-foundation-hero {
   @extend %foundation-images;
   background-image: url("../../img/shatter-foundation-hero-web.jpg");

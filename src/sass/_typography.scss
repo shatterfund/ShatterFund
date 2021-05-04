@@ -109,6 +109,12 @@ hr {
   padding-bottom: 4rem !important;
 }
 
+.pb-4x\!-lg-up {
+  @media (min-width: 960px) {
+    padding-bottom: 4rem !important;
+  }
+}
+
 .px-1x {
   padding-left: 1rem;
   padding-right: 1rem;

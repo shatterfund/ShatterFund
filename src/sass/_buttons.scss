@@ -41,3 +41,18 @@
     //box-shadow: inset 0px 2px 3px rgba(0,0,0,0.7);
   }
 }
+
+.btn--secondary {
+  font-weight: 400;
+  color: #122f3e;//red
+  border: 1px solid #d9e2e6;
+  background-color: #d9e2e6; // red
+  padding: 0.5rem 0.8rem .6rem;
+  //transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid #d9e2e6;
+    background-color: #d9e2e6; // red
+    //box-shadow: inset 0px 2px 3px rgba(0,0,0,0.7);
+  }
+}

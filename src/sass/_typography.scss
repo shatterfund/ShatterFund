@@ -89,6 +89,10 @@ hr {
   margin-top: 4rem;
 }
 
+.ml-1x {
+  margin-left: 1rem;
+}
+
 .pa-1x\! {
   padding: 1rem !important;
 }
@@ -190,6 +194,10 @@ hr {
   @media (min-width: 960px) {
     background-color: white;
   }
+}
+
+.fs-2rem {
+  font-size: 2rem;
 }
 
 .text-center {

@@ -39,6 +39,11 @@
   align-items: center;
 }
 
+.row--align-baseline {
+  display: flex;
+  align-items: baseline;
+}
+
 .text-center-lg-down {
   @media (max-width: 959px) {
     text-align: center;

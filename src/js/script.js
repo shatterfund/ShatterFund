@@ -99,9 +99,9 @@ MobileMenu.init();
 /*
  * google map dynamic height
  */
-var GoogleMapHeight = (function () {
-  var googleMapHeightRef = document.querySelector('.js-google-map__height');
-  var googleMapIframe = document.querySelector('.js-google-map__iframe');
+const GoogleMapHeight = (function () {
+  const googleMapHeightRef = document.querySelector('.js-google-map__height');
+  const googleMapIframe = document.querySelector('.js-google-map__iframe');
 
   if (!googleMapIframe || !googleMapHeightRef) {
     return {
@@ -129,3 +129,30 @@ var GoogleMapHeight = (function () {
 
 })();
 GoogleMapHeight.init();
+
+const AmbassadorModal = (function () {
+  const MODAL_ID = 'ambassador-modal'
+  const modalOpenTriggers = document.querySelectorAll('[data-toggle=' + MODAL_ID + ']')
+  const modal = document.getElementById(MODAL_ID)
+
+  function _init() {
+    modalOpenTriggers.forEach(function (trigger) {
+      trigger.addEventListener('click', _openModal)
+    })
+  }
+
+  function _openModal() {
+    modal.classList.toggle('opened');
+    console.log('opened!')
+  }
+
+  function _closeModal() {
+    modal.classList.toggle('opened');
+    console.log('closed!')
+  }
+
+  return {
+    init: _init
+  }
+})();
+AmbassadorModal.init();

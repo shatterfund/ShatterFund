@@ -2,6 +2,8 @@
  *grid
  */
 
+@use "sass:math";
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -55,30 +57,56 @@
 }
 
 @media (min-width: 960px) {
-  .column { float: left; }
-  .column--2-12 { width: percentage(2/12); }
-  .column--3-12 { width: percentage(3/12); }
-  .column--4-12 { width: percentage(4/12); }
-  .column--5-12 { width: percentage(5/12); }
-  .column--6-12 { width: percentage(6/12); }
-  .column--7-12 { width: percentage(7/12); }
-  .column--8-12 { width: percentage(8/12); }
-  .column--9-12 { width: percentage(9/12); }
-  .column--12-12 { width: percentage(12/12); }
-  .column--1-5 { width: percentage(1/5); }
+  .column {
+    float: left;
+  }
+  .column--2-12 {
+    width: percentage(math.div(2, 12));
+  }
+  .column--3-12 {
+    width: percentage(math.div(3, 12));
+  }
+  .column--4-12 {
+    width: percentage(math.div(4, 12));
+  }
+  .column--5-12 {
+    width: percentage(math.div(5, 12));
+  }
+  .column--6-12 {
+    width: percentage(math.div(6, 12));
+  }
+  .column--7-12 {
+    width: percentage(math.div(7, 12));
+  }
+  .column--8-12 {
+    width: percentage(math.div(8, 12));
+  }
+  .column--9-12 {
+    width: percentage(math.div(9, 12));
+  }
+  .column--12-12 {
+    width: percentage(math.div(12, 12));
+  }
+  .column--1-5 {
+    width: percentage(1 * 0.2);
+  }
 
   .column--offset--6-12 {
-    margin-left: percentage(6/12);
+    margin-left: percentage(math.div(6, 12));
   }
 
   .column--offset--4-12 {
-    margin-left: percentage(4/12);
+    margin-left: percentage(math.div(4, 12));
   }
 }
 
 @media (max-width: 959px) {
-  .row { flex-direction: column; }
-  .column { width: 100%; }
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
 }
 
 /*

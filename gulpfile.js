@@ -1,9 +1,10 @@
 var gulp         = require("gulp");
 var autoprefixer = require("gulp-autoprefixer");
 var nano         = require("gulp-cssnano");
-var sass         = require("gulp-sass");
 var sync         = require("browser-sync");
 var uglify       = require("gulp-uglify");
+
+const sass = require('gulp-sass')(require('sass'))
 
 var paths = {
   html: {

@@ -11,10 +11,15 @@
 }
 
 .hero {
+  position: relative;
   background-image: url('../../img/Laptophands_HighRes.jpg');
   background-position: center top;
   background-size: cover;
   background-color: black;
+
+  &--connect {
+    background-image: url('../../img/hero__connect.png');
+  }
 
   &:before {
     content: "";
@@ -81,8 +86,6 @@
   .primary {
     font-size: 5rem;
     font-weight: 700;
-    color: #eb1c24; //red
-    text-transform: uppercase;
     transition: font-size 0.2s ease-in-out;
 
     @media (max-width: 700px) {
@@ -92,6 +95,14 @@
     @media (max-width: 500px) {
       font-size: 3rem;
     }
+  }
+
+  .primary--red {
+    color: #eb1c24; //red
+  }
+
+  .primary--uppercase {
+    text-transform: uppercase;
   }
 
   .secondary {

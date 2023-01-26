@@ -314,6 +314,14 @@ body, .smooth-container {
   .icon--materna-medical {
     height: 3.5rem;
   }
+
+  .icon--jp-morgan {
+    height: 2.5rem;
+  }
+
+  .icon--sap {
+    height: 2.5rem;
+  }
 }
 
 @media (min-width: 960px) {
@@ -502,6 +510,7 @@ body, .smooth-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 
   @media (max-width: 959px) {
     flex-direction: column;
@@ -517,6 +526,10 @@ body, .smooth-container {
 .press__logo {
   &--diablo {
     height: 2.5rem;
+  }
+
+  &--dos {
+    height: 4rem;
   }
 
   &--cbs {

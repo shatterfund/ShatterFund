@@ -98,6 +98,10 @@ body, .smooth-container {
   }
 }
 
+.heading--primary {
+  font-size: 1.4rem;
+}
+
 .section__background {
   position: absolute;
   top: 0;
@@ -236,7 +240,7 @@ body, .smooth-container {
       max-width: 30rem;
     }
 
-    .column--7-12 {
+    .column--6-12 {
       margin-bottom: ($line-height * 4) * 1rem;
     }
   }

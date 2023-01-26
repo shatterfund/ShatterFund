@@ -12,25 +12,33 @@
 
 .hero {
   position: relative;
-  background-image: url('../../img/Laptophands_HighRes.jpg');
+  background-image: url("../../img/Laptophands_HighRes.jpg");
   background-position: center top;
   background-size: cover;
   background-color: black;
 
   &--connect {
-    background-image: url('../../img/hero__connect.png');
+    background-image: url("../../img/hero__connect.png");
+  }
+
+  &--triangles {
+    background-image: url("../../img/hero__triangles.png");
   }
 
   &:before {
     content: "";
     display: block;
     background: rgba(0, 0, 0, 0.4);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+  }
+
+  &--transparent:before {
+    display: none;
   }
 
   @media (min-width: 959px) {
@@ -55,7 +63,6 @@
     background-position: center;
     z-index: 0;
   }
-
 }
 
 .hero__container {
@@ -127,19 +134,19 @@
     width: 100%;
   }
 }
-
-.hero__container a:not(.btn) {
-  position: relative;
-  display: inline-block;
-
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #439fff;
-  }
-}
+//
+//.hero__container a:not(.btn) {
+//  position: relative;
+//  display: inline-block;
+//
+//  &:before {
+//    content: "";
+//    display: block;
+//    position: absolute;
+//    bottom: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 2px;
+//    background-color: #439fff;
+//  }
+//}
